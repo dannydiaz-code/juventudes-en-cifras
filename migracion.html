@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Migración Juventud | Juventudes en Cifras</title>
+<link rel="stylesheet" href="css/styles.css">
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<style>
+:root{--mig-blue:#293da2;--mig-dark:#293da2;--mig-bg:#f4f7f7;--mig-text:#626b70}
+body{background:var(--mig-bg)}
+.mig-wrap{max-width:1500px;margin:auto;padding:22px 20px 30px;color:var(--mig-text)}
+.mig-top{display:flex;align-items:center;justify-content:space-between;gap:18px;flex-wrap:wrap;margin:0 4px 18px}
+.mig-top h1{font-size:clamp(20px,2vw,27px);color:var(--mig-blue);margin:0;font-weight:700}
+.mig-nav{display:flex;gap:8px;flex-wrap:wrap}.mig-nav a{background:white;color:#7a858b;text-decoration:none;padding:11px 15px;border-radius:12px;font-size:12px;white-space:nowrap}.mig-nav a.active,.mig-nav a:hover{background:var(--mig-blue);color:white}
+.mig-layout{display:grid;grid-template-columns:290px minmax(0,1fr);gap:16px}
+.mig-side{display:flex;flex-direction:column;gap:12px;min-width:0}
+.mig-card,.mig-panel{background:#fff;border-radius:18px;padding:16px;box-shadow:0 2px 9px rgba(30,60,70,.035);min-width:0}
+.mig-card h2{font-size:15px;margin:0 0 12px;color:#343b40}
+.mig-radio{display:flex;gap:9px;align-items:center;margin:10px 0;font-size:13px;cursor:pointer}.mig-radio input{accent-color:var(--mig-blue)}
+.mig-field{display:block;margin:12px 0 0;font-size:13px;font-weight:600;color:#5e686d}
+.mig-field select{display:block;margin-top:8px;width:100%;border:1px solid #d9e0e2;border-radius:8px;background:white;padding:10px;color:#687176;font:inherit;font-weight:400}
+.mig-filter-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.mig-reset{border:0;border-radius:24px;padding:11px 15px;background:#e8edef;color:#24508d;font-weight:600;cursor:pointer;text-align:left}
+.mig-tech{font-size:12px;line-height:1.55;max-height:235px;overflow:auto;text-align:justify}
+.mig-tech img{width:54px;height:54px;object-fit:contain;display:block;margin:0 auto 8px}
+.mig-main{min-width:0;display:grid;grid-template-columns:minmax(0,1fr) 250px;gap:14px}
+.mig-content{min-width:0;display:flex;flex-direction:column;gap:14px}
+.mig-kpis{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.mig-kpi{background:white;border-radius:15px;padding:14px 16px;box-shadow:0 2px 9px rgba(30,60,70,.035)}
+.mig-kpi span{font-size:12px;display:block;color:#818b90}.mig-kpi strong{display:block;font-size:clamp(20px,2.2vw,29px);color:var(--mig-blue);margin-top:6px;overflow-wrap:anywhere}
+.mig-panel h2{font-size:16px;text-align:center;margin:0 0 14px;font-weight:500;color:#5d666b}
+.mig-chart-large{height:410px;position:relative}.mig-chart-small{height:250px;position:relative}
+.mig-charts-bottom{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.mig-table-wrap{overflow:auto;max-height:380px}.mig-table{border-collapse:collapse;width:100%;font-size:12px}.mig-table th,.mig-table td{padding:9px 8px;text-align:left;border-bottom:1px solid #e9eeee}.mig-table th{position:sticky;top:0;background:#fff;color:#626b70;border-bottom:2px solid var(--mig-blue)}.mig-table tr:nth-child(even){background:#f2f4f4}.mig-table td:last-child,.mig-table th:last-child{text-align:right;font-variant-numeric:tabular-nums}
+.mig-note{background:#f4f9fa;border-left:3px solid var(--mig-blue);padding:10px 12px;border-radius:8px;font-size:12px;line-height:1.5}
+.mig-footer{display:flex;justify-content:flex-end;margin-top:14px;font-size:12px;color:#333}.mig-footer strong{margin-left:4px}
+.mig-empty{padding:24px;text-align:center;color:#7c858a;font-size:13px}
+@media(max-width:1100px){.mig-layout{grid-template-columns:250px minmax(0,1fr)}.mig-main{grid-template-columns:1fr}.mig-kpis{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media(max-width:700px){.mig-wrap{padding:14px 10px}.mig-layout{grid-template-columns:1fr}.mig-filter-grid,.mig-charts-bottom,.mig-kpis{grid-template-columns:1fr}.mig-chart-large{height:320px}.mig-chart-small{height:230px}.mig-top{align-items:flex-start}}
+</style>
+</head>
+<body>
+<header class="site-header"><div class="header-inner"><div class="institutional-logos">
+<img src="assets/escudo.png" alt="Gobierno de Honduras" class="header-logo logo-honduras">
+<img src="assets/logo-injuve1.png" alt="INJUVE" class="header-logo logo-injuve">
+<img src="assets/observatorio nacional.png" alt="Observatorio Nacional de los Derechos de las Juventudes" class="header-logo logo-observatorio">
+</div></div></header>
+<main class="main-shell" style="display:block;min-height:75vh">
+<section class="mig-wrap">
+<div class="mig-top"><h1>MIGRACIÓN JUVENTUD</h1><nav class="mig-nav"><a href="index.html">INICIO</a><a class="active" href="migracion.html">MIGRACIÓN</a><a href="datos-demograficos.html">DEMOGRAFICOS</a><a href="educacion.html">EDUCACIÓN</a><a href="comparacion-2024-2025.html">COMPARACIÓN 2024–2025 </a><a href="mercado-trabajo.html">FACTORES SOCIOECONOMICOS </a><a href="salud-mujeres-jovenes.html">PARTOS </a><a href="seguridad-ciudadana.html">SEGUIRDAD CIUDADANA </a></nav></div>
+<div class="mig-layout">
+<aside class="mig-side">
+<section class="mig-card"><h2>Tipo de migración</h2>
+<label class="mig-radio"><input type="radio" name="tipo" value="Migración regular" checked> Migración Regular</label>
+<label class="mig-radio"><input type="radio" name="tipo" value="Migración irregular / jóvenes en tránsito"> Migración Irregular / Jóvenes en Tránsito</label>
+<label class="mig-radio"><input type="radio" name="tipo" value="Jóvenes retornados"> Jóvenes Retornados</label>
+</section>
+<section class="mig-card">
+<div class="mig-filter-grid" style="grid-template-columns:1fr">
+<label class="mig-field">Año<select id="anio"><option value="Todos">Todos</option></select></label>
+</div>
+</section>
+<section class="mig-card"><h2>Ficha técnica</h2><div class="mig-tech">
+<p>El Observatorio Nacional de los Derechos de las Juventudes pone a disposición información estadística sobre dinámicas migratorias de jóvenes de 12 a 30 años.</p>
+<p>Este tablero presenta la distribución por departamento para tres categorías: Migración regular, Migración irregular / Jóvenes en tránsito y Jóvenes retornados, según los datos obtenidos. Las gráficas geográficas incluyen únicamente registros asociados a departamentos identificables.</p>
+<p>Los datos disponibles corresponden a los años 2022, 2023 y 2024.</p>
+</div></section>
+<button class="mig-reset" id="reset">↻ Reiniciar filtros</button>
+</aside>
+<div class="mig-main">
+<div class="mig-content">
+<section class="mig-kpis">
+<div class="mig-kpi"><span>Registros listados</span><strong id="kpiTotal">—</strong></div>
+
+<div class="mig-kpi"><span>Año seleccionado</span><strong id="kpiYear">Todos</strong></div>
+</section>
+<section class="mig-panel"><h2 id="mainTitle">Distribución por departamento</h2><div class="mig-chart-large"><canvas id="deptChart"></canvas></div></section>
+<div class="mig-charts-bottom">
+<section class="mig-panel"><h2>Comparación por año</h2><div class="mig-chart-small"><canvas id="yearChart"></canvas></div></section>
+<section class="mig-panel"><h2>Detalle de datos</h2><div class="mig-table-wrap"><table class="mig-table"><thead><tr><th>Departamento</th><th>Cantidad</th></tr></thead><tbody id="detailTable"></tbody></table></div></section>
+</div>
+<div class="mig-note" id="note">Las gráficas muestran los valores disponibles para la categoría seleccionada.</div>
+</div>
+</div>
+<div class="mig-footer">Fuente: <strong>Instituto Nacional de Migración (INM)</strong></div>
+</div>
+</section></main>
+<script>
+let DATA;
+let deptChart,yearChart;
+const fmt=n=>new Intl.NumberFormat('es-HN',{maximumFractionDigits:0}).format(n);
+const normalize=s=>s.normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase().trim();
+async function init(){
+ try{
+  const res=await fetch('data/migracion.json'); if(!res.ok)throw new Error('No se pudo cargar data/migracion.json'); DATA=await res.json();
+  const years=document.getElementById('anio');
+  DATA.years.forEach(y=>{const o=document.createElement('option');o.value=y;o.textContent=y;years.appendChild(o)});
+  deptChart = new Chart(document.getElementById('deptChart'), {
+   type: 'bar',
+   data: { labels: [], datasets: [{ label: 'Cantidad', data: [], backgroundColor: '#293eaa', borderRadius: 3 }] },
+   options: {
+    indexAxis: 'y', responsive: true, maintainAspectRatio: false,
+    plugins: { legend: { display: false }, tooltip: { callbacks: { label: c => fmt(c.raw) } } },
+    scales: { x: { beginAtZero: true, ticks: { callback: v => fmt(v) } }, y: { ticks: { autoSkip: false } } }
+   }
+  });
+  yearChart = new Chart(document.getElementById('yearChart'), {
+   type: 'bar',
+   data: { labels: [], datasets: [{ label: 'Total listado', data: [], backgroundColor: '#293eaa', borderRadius: 3 }] },
+   options: {
+    responsive: true, maintainAspectRatio: false,
+    plugins: { legend: { display: false }, tooltip: { callbacks: { label: c => fmt(c.raw) } } },
+    scales: { y: { beginAtZero: true, ticks: { callback: v => fmt(v) } } }
+   }
+  });
+  document.querySelectorAll('input[name="tipo"],#anio').forEach(el=>el.addEventListener('change',update));
+  document.getElementById('reset').addEventListener('click',()=>{document.querySelector('input[name="tipo"][value="Migración regular"]').checked=true;document.getElementById('anio').value='Todos';update()});
+  update();
+ }catch(e){document.querySelector('.mig-content').innerHTML='<div class="mig-panel mig-empty">No se pudo cargar el archivo de datos. Abre esta página con Live Server y verifica que exista la carpeta data con migracion.json.</div>'}
+}
+function selectedType(){return document.querySelector('input[name="tipo"]:checked').value}
+function rowsFor(year,type){return (DATA.data[year]&&DATA.data[year][type])||[]}
+function update(){
+ const type=selectedType(), year=document.getElementById('anio').value;
+ const years=year==='Todos'?DATA.years:[year];
+ const isRealDepartment = r => !['sin dato en excel','no aplica',''].includes(normalize(r.departamento));
+ let rows=[];
+ years.forEach(y=>rowsFor(y,type).filter(isRealDepartment).forEach(r=>rows.push({...r,anio:y})));
+ // Solo se representan departamentos identificables; se excluyen filas administrativas/no geográficas.
+ const grouped={}; rows.forEach(r=>{grouped[r.departamento]=(grouped[r.departamento]||0)+r.cantidad});
+ const deptRows=Object.entries(grouped).map(([departamento,cantidad])=>({departamento,cantidad})).sort((a,b)=>b.cantidad-a.cantidad);
+ deptChart.data.labels=deptRows.map(r=>r.departamento);deptChart.data.datasets[0].data=deptRows.map(r=>r.cantidad);deptChart.update();
+ const annual=DATA.years.map(y=>({year:y,total:rowsFor(y,type).filter(isRealDepartment).reduce((s,r)=>s+r.cantidad,0)}));
+ yearChart.data.labels=annual.map(r=>r.year);yearChart.data.datasets[0].data=annual.map(r=>r.total);yearChart.update();
+ document.getElementById('mainTitle').textContent=`${type} — distribución por departamento${year==='Todos'?' (2022–2024)':` (${year})`}`;
+ document.getElementById('kpiTotal').textContent=fmt(rows.reduce((s,r)=>s+r.cantidad,0));
+ document.getElementById('kpiYear').textContent=year==='Todos'?'2022–2024':year;
+ document.getElementById('detailTable').innerHTML=deptRows.map(r=>`<tr><td>${r.departamento}</td><td>${fmt(r.cantidad)}</td></tr>`).join('')||'<tr><td colspan="2">No hay registros para esta selección.</td></tr>';
+ document.getElementById('note').textContent='Las gráficas muestran únicamente registros asociados a departamentos identificables.';
+}
+init();
+</script>
+</body></html>

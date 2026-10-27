@@ -1,0 +1,569 @@
+{
+  "titulo": "Partos en mujeres jóvenes",
+  "años": [
+    {
+      "Año": 2020,
+      "Cantidad del gráfico": 83889,
+      "Suma del detalle": 83889
+    },
+    {
+      "Año": 2021,
+      "Cantidad del gráfico": 86435,
+      "Suma del detalle": 86435
+    },
+    {
+      "Año": 2022,
+      "Cantidad del gráfico": 84061,
+      "Suma del detalle": 84061
+    },
+    {
+      "Año": 2023,
+      "Cantidad del gráfico": 60998,
+      "Suma del detalle": 60998
+    }
+  ],
+  "detalle": [
+    {
+      "Año": 2020,
+      "Edad": 12,
+      "Cantidad": 39,
+      "Origen": "Transcrito de las capturas"
+    },
+    {
+      "Año": 2020,
+      "Edad": 13,
+      "Cantidad": 138,
+      "Origen": "Transcrito de las capturas"
+    },
+    {
+      "Año": 2020,
+      "Edad": 14,
+      "Cantidad": 584,
+      "Origen": "Transcrito de las capturas"
+    },
+    {
+      "Año": 2020,
+      "Edad": 15,
+      "Cantidad": 1677,
+      "Origen": "Transcrito de las capturas"
+    },
+    {
+      "Año": 2020,
+      "Edad": 16,
+      "Cantidad": 3066,
+      "Origen": "Transcrito de las capturas"
+    },
+    {
+      "Año": 2020,
+      "Edad": 17,
+      "Cantidad": 4503,
+      "Origen": "Transcrito de las capturas"
+    },
+    {
+      "Año": 2020,
+      "Edad": 18,
+      "Cantidad": 5643,
+      "Origen": "Transcrito de las capturas"
+    },
+    {
+      "Año": 2020,
+      "Edad": 19,
+      "Cantidad": 6536,
+      "Origen": "Transcrito de las capturas"
+    },
+    {
+      "Año": 2020,
+      "Edad": 20,
+      "Cantidad": 7597,
+      "Origen": "Transcrito de las capturas"
+    },
+    {
+      "Año": 2020,
+      "Edad": 21,
+      "Cantidad": 7640,
+      "Origen": "Transcrito de las capturas"
+    },
+    {
+      "Año": 2020,
+      "Edad": 22,
+      "Cantidad": 7014,
+      "Origen": "Transcrito de las capturas"
+    },
+    {
+      "Año": 2020,
+      "Edad": 23,
+      "Cantidad": 6365,
+      "Origen": "Transcrito de las capturas"
+    },
+    {
+      "Año": 2020,
+      "Edad": 24,
+      "Cantidad": 6055,
+      "Origen": "Transcrito de las capturas"
+    },
+    {
+      "Año": 2020,
+      "Edad": 25,
+      "Cantidad": 5531,
+      "Origen": "Transcrito de las capturas"
+    },
+    {
+      "Año": 2020,
+      "Edad": 26,
+      "Cantidad": 4971,
+      "Origen": "Transcrito de las capturas"
+    },
+    {
+      "Año": 2020,
+      "Edad": 27,
+      "Cantidad": 4626,
+      "Origen": "Transcrito de las capturas"
+    },
+    {
+      "Año": 2020,
+      "Edad": 28,
+      "Cantidad": 4350,
+      "Origen": "Transcrito de las capturas"
+    },
+    {
+      "Año": 2020,
+      "Edad": 29,
+      "Cantidad": 3851,
+      "Origen": "Transcrito de las capturas"
+    },
+    {
+      "Año": 2020,
+      "Edad": 30,
+      "Cantidad": 3703,
+      "Origen": "Transcrito de las capturas"
+    },
+    {
+      "Año": 2021,
+      "Edad": 12,
+      "Cantidad": 30,
+      "Origen": "Transcrito de las capturas"
+    },
+    {
+      "Año": 2021,
+      "Edad": 13,
+      "Cantidad": 187,
+      "Origen": "Transcrito de las capturas"
+    },
+    {
+      "Año": 2021,
+      "Edad": 14,
+      "Cantidad": 745,
+      "Origen": "Transcrito de las capturas"
+    },
+    {
+      "Año": 2021,
+      "Edad": 15,
+      "Cantidad": 1884,
+      "Origen": "Transcrito de las capturas"
+    },
+    {
+      "Año": 2021,
+      "Edad": 16,
+      "Cantidad": 3488,
+      "Origen": "Transcrito de las capturas"
+    },
+    {
+      "Año": 2021,
+      "Edad": 17,
+      "Cantidad": 4718,
+      "Origen": "Transcrito de las capturas"
+    },
+    {
+      "Año": 2021,
+      "Edad": 18,
+      "Cantidad": 5738,
+      "Origen": "Transcrito de las capturas"
+    },
+    {
+      "Año": 2021,
+      "Edad": 19,
+      "Cantidad": 6497,
+      "Origen": "Transcrito de las capturas"
+    },
+    {
+      "Año": 2021,
+      "Edad": 20,
+      "Cantidad": 6976,
+      "Origen": "Transcrito de las capturas"
+    },
+    {
+      "Año": 2021,
+      "Edad": 21,
+      "Cantidad": 7533,
+      "Origen": "Transcrito de las capturas"
+    },
+    {
+      "Año": 2021,
+      "Edad": 22,
+      "Cantidad": 7305,
+      "Origen": "Transcrito de las capturas"
+    },
+    {
+      "Año": 2021,
+      "Edad": 23,
+      "Cantidad": 6878,
+      "Origen": "Transcrito de las capturas"
+    },
+    {
+      "Año": 2021,
+      "Edad": 24,
+      "Cantidad": 6227,
+      "Origen": "Transcrito de las capturas"
+    },
+    {
+      "Año": 2021,
+      "Edad": 25,
+      "Cantidad": 5759,
+      "Origen": "Transcrito de las capturas"
+    },
+    {
+      "Año": 2021,
+      "Edad": 26,
+      "Cantidad": 5304,
+      "Origen": "Transcrito de las capturas"
+    },
+    {
+      "Año": 2021,
+      "Edad": 27,
+      "Cantidad": 4734,
+      "Origen": "Transcrito de las capturas"
+    },
+    {
+      "Año": 2021,
+      "Edad": 28,
+      "Cantidad": 4424,
+      "Origen": "Transcrito de las capturas"
+    },
+    {
+      "Año": 2021,
+      "Edad": 29,
+      "Cantidad": 4170,
+      "Origen": "Transcrito de las capturas"
+    },
+    {
+      "Año": 2021,
+      "Edad": 30,
+      "Cantidad": 3838,
+      "Origen": "Transcrito de las capturas"
+    },
+    {
+      "Año": 2022,
+      "Edad": 12,
+      "Cantidad": 40,
+      "Origen": "Transcrito de las capturas"
+    },
+    {
+      "Año": 2022,
+      "Edad": 13,
+      "Cantidad": 198,
+      "Origen": "Transcrito de las capturas"
+    },
+    {
+      "Año": 2022,
+      "Edad": 14,
+      "Cantidad": 765,
+      "Origen": "Calculado por diferencia con los totales del gráfico"
+    },
+    {
+      "Año": 2022,
+      "Edad": 15,
+      "Cantidad": 1845,
+      "Origen": "Transcrito de las capturas"
+    },
+    {
+      "Año": 2022,
+      "Edad": 16,
+      "Cantidad": 3443,
+      "Origen": "Transcrito de las capturas"
+    },
+    {
+      "Año": 2022,
+      "Edad": 17,
+      "Cantidad": 4724,
+      "Origen": "Transcrito de las capturas"
+    },
+    {
+      "Año": 2022,
+      "Edad": 18,
+      "Cantidad": 5436,
+      "Origen": "Transcrito de las capturas"
+    },
+    {
+      "Año": 2022,
+      "Edad": 19,
+      "Cantidad": 6037,
+      "Origen": "Transcrito de las capturas"
+    },
+    {
+      "Año": 2022,
+      "Edad": 20,
+      "Cantidad": 6475,
+      "Origen": "Transcrito de las capturas"
+    },
+    {
+      "Año": 2022,
+      "Edad": 21,
+      "Cantidad": 6798,
+      "Origen": "Transcrito de las capturas"
+    },
+    {
+      "Año": 2022,
+      "Edad": 22,
+      "Cantidad": 6975,
+      "Origen": "Transcrito de las capturas"
+    },
+    {
+      "Año": 2022,
+      "Edad": 23,
+      "Cantidad": 6785,
+      "Origen": "Transcrito de las capturas"
+    },
+    {
+      "Año": 2022,
+      "Edad": 24,
+      "Cantidad": 6354,
+      "Origen": "Transcrito de las capturas"
+    },
+    {
+      "Año": 2022,
+      "Edad": 25,
+      "Cantidad": 5590,
+      "Origen": "Transcrito de las capturas"
+    },
+    {
+      "Año": 2022,
+      "Edad": 26,
+      "Cantidad": 5256,
+      "Origen": "Transcrito de las capturas"
+    },
+    {
+      "Año": 2022,
+      "Edad": 27,
+      "Cantidad": 4912,
+      "Origen": "Transcrito de las capturas"
+    },
+    {
+      "Año": 2022,
+      "Edad": 28,
+      "Cantidad": 4424,
+      "Origen": "Transcrito de las capturas"
+    },
+    {
+      "Año": 2022,
+      "Edad": 29,
+      "Cantidad": 4093,
+      "Origen": "Transcrito de las capturas"
+    },
+    {
+      "Año": 2022,
+      "Edad": 30,
+      "Cantidad": 3911,
+      "Origen": "Transcrito de las capturas"
+    },
+    {
+      "Año": 2023,
+      "Edad": 12,
+      "Cantidad": 32,
+      "Origen": "Transcrito de las capturas"
+    },
+    {
+      "Año": 2023,
+      "Edad": 13,
+      "Cantidad": 121,
+      "Origen": "Transcrito de las capturas"
+    },
+    {
+      "Año": 2023,
+      "Edad": 14,
+      "Cantidad": 572,
+      "Origen": "Transcrito de las capturas"
+    },
+    {
+      "Año": 2023,
+      "Edad": 15,
+      "Cantidad": 1382,
+      "Origen": "Transcrito de las capturas"
+    },
+    {
+      "Año": 2023,
+      "Edad": 16,
+      "Cantidad": 2567,
+      "Origen": "Transcrito de las capturas"
+    },
+    {
+      "Año": 2023,
+      "Edad": 17,
+      "Cantidad": 3459,
+      "Origen": "Transcrito de las capturas"
+    },
+    {
+      "Año": 2023,
+      "Edad": 18,
+      "Cantidad": 4189,
+      "Origen": "Transcrito de las capturas"
+    },
+    {
+      "Año": 2023,
+      "Edad": 19,
+      "Cantidad": 4251,
+      "Origen": "Transcrito de las capturas"
+    },
+    {
+      "Año": 2023,
+      "Edad": 20,
+      "Cantidad": 4568,
+      "Origen": "Transcrito de las capturas"
+    },
+    {
+      "Año": 2023,
+      "Edad": 21,
+      "Cantidad": 4502,
+      "Origen": "Transcrito de las capturas"
+    },
+    {
+      "Año": 2023,
+      "Edad": 22,
+      "Cantidad": 4636,
+      "Origen": "Transcrito de las capturas"
+    },
+    {
+      "Año": 2023,
+      "Edad": 23,
+      "Cantidad": 4863,
+      "Origen": "Transcrito de las capturas"
+    },
+    {
+      "Año": 2023,
+      "Edad": 24,
+      "Cantidad": 4617,
+      "Origen": "Transcrito de las capturas"
+    },
+    {
+      "Año": 2023,
+      "Edad": 25,
+      "Cantidad": 4300,
+      "Origen": "Transcrito de las capturas"
+    },
+    {
+      "Año": 2023,
+      "Edad": 26,
+      "Cantidad": 3854,
+      "Origen": "Transcrito de las capturas"
+    },
+    {
+      "Año": 2023,
+      "Edad": 27,
+      "Cantidad": 3641,
+      "Origen": "Transcrito de las capturas"
+    },
+    {
+      "Año": 2023,
+      "Edad": 28,
+      "Cantidad": 3357,
+      "Origen": "Calculado por diferencia con los totales del gráfico"
+    },
+    {
+      "Año": 2023,
+      "Edad": 29,
+      "Cantidad": 3111,
+      "Origen": "Calculado por diferencia con los totales del gráfico"
+    },
+    {
+      "Año": 2023,
+      "Edad": 30,
+      "Cantidad": 2976,
+      "Origen": "Calculado por diferencia con los totales del gráfico"
+    }
+  ],
+  "edades": [
+    {
+      "Edad": 12,
+      "Cantidad del gráfico": 141
+    },
+    {
+      "Edad": 13,
+      "Cantidad del gráfico": 644
+    },
+    {
+      "Edad": 14,
+      "Cantidad del gráfico": 2666
+    },
+    {
+      "Edad": 15,
+      "Cantidad del gráfico": 6788
+    },
+    {
+      "Edad": 16,
+      "Cantidad del gráfico": 12564
+    },
+    {
+      "Edad": 17,
+      "Cantidad del gráfico": 17404
+    },
+    {
+      "Edad": 18,
+      "Cantidad del gráfico": 21006
+    },
+    {
+      "Edad": 19,
+      "Cantidad del gráfico": 23321
+    },
+    {
+      "Edad": 20,
+      "Cantidad del gráfico": 25616
+    },
+    {
+      "Edad": 21,
+      "Cantidad del gráfico": 26473
+    },
+    {
+      "Edad": 22,
+      "Cantidad del gráfico": 25930
+    },
+    {
+      "Edad": 23,
+      "Cantidad del gráfico": 24891
+    },
+    {
+      "Edad": 24,
+      "Cantidad del gráfico": 23253
+    },
+    {
+      "Edad": 25,
+      "Cantidad del gráfico": 21180
+    },
+    {
+      "Edad": 26,
+      "Cantidad del gráfico": 19385
+    },
+    {
+      "Edad": 27,
+      "Cantidad del gráfico": 17913
+    },
+    {
+      "Edad": 28,
+      "Cantidad del gráfico": 16555
+    },
+    {
+      "Edad": 29,
+      "Cantidad del gráfico": 15225
+    },
+    {
+      "Edad": 30,
+      "Cantidad del gráfico": 14428
+    }
+  ],
+  "notas": [
+    "El detalle por año y edad se completó con los registros visibles en las capturas.",
+    "Cuatro valores no se veían completos en las capturas y se calcularon por diferencia usando los totales por edad y por año del tablero.",
+    "Los valores calculados están identificados en la columna Origen de la hoja Detalle por año y edad.",
+    "Verificación: la suma por año coincide con los totales del gráfico y suma 315,383."
+  ],
+  "fuente": "Secretaría de Salud (SESAL), según el tablero de Juventudes en Cifras de INJUVE.",
+  "metodologia": "El detalle se transcribió de las capturas. Los registros calculados por diferencia se identifican en la tabla."
+}

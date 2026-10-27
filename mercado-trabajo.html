@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="es"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>FACTORES SOCIOECONOMICOS | Juventudes en Cifras</title>
+<link rel="stylesheet" href="css/styles.css">
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<style>
+.mt-dashboard{max-width:1500px;margin:auto;padding:24px 24px 32px}
+.mt-top{display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap;margin-bottom:20px}
+.mt-title{color:#282bcb;font-size:clamp(21px,2vw,28px);line-height:1.25;margin:0;max-width:410px}
+.mt-nav{display:flex;gap:8px;flex-wrap:wrap}.mt-nav a{padding:10px 14px;border-radius:10px;background:white;color:#777;text-decoration:none;font-size:12px;white-space:nowrap}.mt-nav a.active,.mt-nav a:hover{background:#293b98;color:white}
+.mt-layout{display:grid;grid-template-columns:240px minmax(0,1fr);gap:18px}
+.mt-sidebar{display:flex;flex-direction:column;gap:14px}
+.mt-filter-card,.mt-panel,.mt-kpi{background:white;border-radius:16px;padding:16px;box-shadow:0 3px 12px rgba(35,70,80,.04)}
+.mt-filter-card h2{font-size:16px;color:#333;margin:0 0 12px}
+.mt-radio{display:flex;align-items:center;gap:8px;margin:11px 0;color:#555;font-size:14px;cursor:pointer}.mt-radio input{accent-color:#282bcb}
+.mt-reset{border:0;background:#e8edef;color:#24508d;border-radius:22px;padding:12px 16px;font-weight:bold;cursor:pointer}
+.mt-kpis{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin-bottom:14px}
+.mt-kpi span{display:block;color:#777;font-size:13px}.mt-kpi strong{display:block;color:#282bcb ;font-size:clamp(20px,2.3vw,30px);margin-top:8px;overflow-wrap:anywhere}.mt-kpi small{display:block;color:#888;margin-top:5px;font-size:11px;line-height:1.4}
+.mt-charts{display:grid;grid-template-columns:1fr 1fr;gap:14px}.mt-panel h2{margin:0 0 16px;text-align:center;color:#333;font-size:17px}.mt-chart-box{height:300px;position:relative}
+.mt-table-panel{margin-top:14px;overflow:auto}.mt-table{width:100%;border-collapse:collapse;font-size:13px;color:#454545}.mt-table th{text-align:left;font-weight:500;border-bottom:2px solid #293b98;padding:10px 8px;white-space:nowrap}.mt-table td{padding:9px 8px;border-bottom:1px solid #e8eded}.mt-table tbody tr:nth-child(even){background:#f1f2f2}
+.mt-note{margin-top:14px;background:#fff8e8;border:1px solid #f1dfac;color:#705b2a;border-radius:10px;padding:12px 14px;font-size:12px;line-height:1.5}
+.mt-foot{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;margin-top:18px;font-size:12px;color:#777;line-height:1.5}
+@media(max-width:1000px){.mt-layout{grid-template-columns:210px minmax(0,1fr)}.mt-charts{grid-template-columns:1fr}}
+@media(max-width:700px){.mt-dashboard{padding:18px 12px}.mt-layout{grid-template-columns:1fr}.mt-kpis{grid-template-columns:1fr}.mt-chart-box{height:250px}.mt-title{max-width:none}}
+</style></head><body>
+<header class="site-header"><div class="header-inner"><div class="institutional-logos">
+<img src="assets/escudo.png" alt="Gobierno de Honduras" class="header-logo logo-honduras">
+<img src="assets/logo-injuve1.png" alt="INJUVE" class="header-logo logo-injuve">
+<img src="assets/observatorio nacional.png" alt="Observatorio Nacional de los Derechos de las Juventudes" class="header-logo logo-observatorio">
+</div></div></header>
+<main class="main-shell" style="display:block;min-height:75vh"><section class="mt-dashboard">
+<div class="mt-top"><h1 class="mt-title">FACTORES SOCIOECONÓMICOS<br>INDICADORES DE MERCADO DE TRABAJO EN POBLACIÓN JOVEN DE 12 A 30 AÑOS</h1>
+<nav class="mt-nav"><a href="index.html">INICIO</a><a class="active" href="mercado-trabajo.html">FACTORES SOCIOECONÓMICOS</a><a href="datos-demograficos.html">DEMOGRAFÍA</a><a href="educacion.html">EDUCACIÓN</a><a href="comparacion-2024-2025.html">COMPARACIÓN 2024–2025</a><a href="migracion.html">MIGRACION</a><a href="salud-mujeres-jovenes.html">PARTOS</a><a href="seguridad-ciudadana.html">SEGURIDAD CIUDADANA</a></nav></div>
+<div class="mt-layout">
+<aside class="mt-sidebar">
+<section class="mt-filter-card"><h2>Indicador</h2>
+<label class="mt-radio"><input type="radio" name="indicator" value="employment" checked> Empleo por área</label>
+<label class="mt-radio"><input type="radio" name="indicator" value="classification"> Situación educativa y laboral</label>
+<label class="mt-radio"><input type="radio" name="indicator" value="income"> Ingreso promedio</label>
+<label class="mt-radio"><input type="radio" name="indicator" value="domain"> Distribución por dominio</label>
+</section>
+<section class="mt-filter-card"><h2>Vista complementaria</h2>
+<label class="mt-radio"><input type="radio" name="breakdown" value="primary" checked> Indicador principal</label>
+<label class="mt-radio"><input type="radio" name="breakdown" value="secondary"> Indicador complementario</label>
+</section>
+<button class="mt-reset" id="resetFilters" type="button">↻ Reiniciar filtros</button>
+</aside>
+<div class="mt-main">
+<section class="mt-kpis">
+<article class="mt-kpi"><span id="kpi1Label">Empleo en área urbana</span><strong id="kpi1">58%</strong><small>Porcentaje reportado</small></article>
+<article class="mt-kpi"><span id="kpi2Label">Empleo en área rural</span><strong id="kpi2">42%</strong><small>Porcentaje reportado</small></article>
+<article class="mt-kpi"><span id="kpi3Label">Ingreso promedio urbano</span><strong id="kpi3">L 10,757.60</strong><small>Ingreso promedio reportado</small></article>
+</section>
+<section class="mt-charts">
+<article class="mt-panel"><h2 id="chartTitle1">Distribución del empleo juvenil por área</h2><div class="mt-chart-box"><canvas id="mainChart"></canvas></div></article>
+<article class="mt-panel"><h2 id="chartTitle2">PEA juvenil por área </h2><div class="mt-chart-box"><canvas id="secondaryChart"></canvas></div></article>
+</section>
+<section class="mt-panel mt-table-panel"><h2>Detalle de los datos seleccionados</h2><table class="mt-table"><thead><tr><th>Indicador</th><th>Categoría</th><th>Valor</th><th>Unidad</th></tr></thead><tbody id="dataTable"></tbody></table></section>
+<div class="mt-foot"><span>Fuente: cálculos propios con datos de la EPHPM, 2026.</span><span></div>
+</div></div></section></main>
+<script>
+const DATA={
+ employment:[{label:"Área urbana",value:58,unit:"%"},{label:"Área rural",value:42,unit:"%"}],
+ pea:[{label:"PEA juvenil urbana",value:53.07,unit:"%"},{label:"PEA juvenil rural",value:38.53,unit:"%"}],
+ domain:[{label:"Área rural",value:45,unit:"%"},{label:"Resto urbano",value:38,unit:"%"},{label:"Distrito Central",value:10,unit:"%"},{label:"San Pedro Sula",value:7,unit:"%"}],
+ classification:[{label:"Estudia y trabaja",value:45.22,unit:"%"},{label:"Solo estudia",value:27.57,unit:"%"},{label:"NINI",value:27.20,unit:"%"}],
+ income:[{label:"Ingreso promedio hombres jóvenes (18–30)",value:8731.9,unit:"Lempiras"},{label:"Área rural",value:6192.7,unit:"Lempiras"},{label:"Área urbana",value:10757.6,unit:"Lempiras"}],
+ gap:[{label:"Brecha de ingreso urbano-rural",value:4564.9,unit:"Lempiras"}]
+};
+const fmt=n=>new Intl.NumberFormat("es-HN",{maximumFractionDigits:2}).format(n);
+const makeChart=(id)=>new Chart(document.getElementById(id),{type:"bar",data:{labels:[],datasets:[{data:[],backgroundColor:["#edf0f2","#282bcb","#edf0f2","#282bcb"],borderRadius:3}]},options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{display:false},tooltip:{callbacks:{label:c=>{const isMoney=c.dataset.label==="Lempiras";return (isMoney?"L ":"")+fmt(c.raw)+(isMoney?"":"%")}}}},scales:{y:{beginAtZero:true}}}});
+const chart1=makeChart("mainChart"),chart2=makeChart("secondaryChart");
+function update(){
+ const ind=document.querySelector('input[name="indicator"]:checked').value;
+ const view=document.querySelector('input[name="breakdown"]:checked').value;
+ let primary,secondary,title1,title2,money=ind==="income";
+ if(ind==="employment"){primary=DATA.employment;secondary=DATA.pea;title1="Distribución del empleo juvenil por área";title2="PEA juvenil por área"}
+ else if(ind==="classification"){primary=DATA.classification;secondary=DATA.employment;title1="Situación educativa y laboral";title2="Distribución del empleo por área"}
+ else if(ind==="income"){primary=DATA.income;secondary=DATA.gap;title1="Ingreso promedio reportado";title2="Brecha de ingreso urbano-rural"}
+ else{primary=DATA.domain;secondary=DATA.employment;title1="Distribución por dominio";title2="Empleo juvenil por área"}
+ if(view==="secondary"){const temp=primary;primary=secondary;secondary=temp;const tt=title1;title1=title2;title2=tt}
+ document.getElementById("chartTitle1").textContent=title1;document.getElementById("chartTitle2").textContent=title2;
+ const kpis=ind==="employment"?[["Empleo en área urbana","58%"],["Empleo en área rural","42%"],["Ingreso promedio urbano","L 10,757.60"]]:
+ ind==="classification"?[["Estudia y trabaja","45.22%"],["Solo estudia","27.57%"],["NINI","27.20%"]]:
+ ind==="income"?[["Ingreso promedio hombres jóvenes","L 8,731.90"],["Ingreso promedio rural","L 6,192.70"],["Ingreso promedio urbano","L 10,757.60"]]:
+ [["Área rural","45%"],["Resto urbano","38%"],["Distrito Central","10%"]];
+ kpis.forEach((k,i)=>{document.getElementById("kpi"+(i+1)+"Label").textContent=k[0];document.getElementById("kpi"+(i+1)).textContent=k[1]});
+ [ [chart1,primary],[chart2,secondary] ].forEach(([chart,arr])=>{
+  chart.data.labels=arr.map(d=>d.label);chart.data.datasets[0].data=arr.map(d=>d.value);
+  chart.data.datasets[0].label=arr[0]?.unit==="Lempiras"?"Lempiras":"Porcentaje";
+  chart.options.scales.y.ticks={callback:v=>chart.data.datasets[0].label==="Lempiras"?"L "+fmt(v):fmt(v)+"%"};
+  chart.update();
+ });
+ document.getElementById("dataTable").innerHTML=primary.map(d=>`<tr><td>${title1}</td><td>${d.label}</td><td>${d.unit==="Lempiras"?"L ":""}${fmt(d.value)}</td><td>${d.unit}</td></tr>`).join("");
+}
+document.querySelectorAll('input[name="indicator"],input[name="breakdown"]').forEach(el=>el.addEventListener("change",update));
+document.getElementById("resetFilters").addEventListener("click",()=>{document.querySelector('input[name="indicator"][value="employment"]').checked=true;document.querySelector('input[name="breakdown"][value="primary"]').checked=true;update()});
+update();
+</script></body></html>

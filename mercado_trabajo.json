@@ -1,0 +1,67 @@
+{
+  "source": "datos 2026 primer tri.xlsx",
+  "source_note": "Cálculos propios con datos de la EPHPM, 2026, según el archivo proporcionado.",
+  "employment_by_area_percent": [
+    {
+      "area": "Urbana",
+      "percent": 58
+    },
+    {
+      "area": "Rural",
+      "percent": 42
+    }
+  ],
+  "pea_youth_by_area_percent_as_reported": [
+    {
+      "area": "Urbana",
+      "percent": 53.07
+    },
+    {
+      "area": "Rural",
+      "percent": 38.53
+    }
+  ],
+  "domain_distribution_percent": [
+    {
+      "domain": "Área rural",
+      "percent": 45
+    },
+    {
+      "domain": "Resto urbano",
+      "percent": 38
+    },
+    {
+      "domain": "Distrito Central",
+      "percent": 10
+    },
+    {
+      "domain": "San Pedro Sula",
+      "percent": 7
+    }
+  ],
+  "average_income_hnl": {
+    "overall_men_age_18_30": 8731.9,
+    "rural": 6192.7,
+    "urban": 10757.6,
+    "urban_rural_gap": 4564.9
+  },
+  "youth_classification_percent": [
+    {
+      "category": "Estudia y trabaja",
+      "percent": 45.22
+    },
+    {
+      "category": "Solo estudia",
+      "percent": 27.57
+    },
+    {
+      "category": "NINI",
+      "percent": 27.2
+    }
+  ],
+  "limitations": [
+    "El Excel contiene cifras agregadas en textos y gráficos, no una tabla completa de microdatos.",
+    "Los porcentajes de PEA juvenil por área (53.07% urbana y 38.53% rural) suman 91.60%; verificar definiciones y denominador antes de publicar.",
+    "Los porcentajes de clasificación suman 99.99% por redondeo."
+  ]
+}

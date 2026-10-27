@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Datos Demográficos | Juventudes en Cifras</title>
+<link rel="stylesheet" href="css/styles.css">
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<style>
+.demo-page{max-width:1600px;margin:0 auto;padding:18px 18px 26px}
+.demo-top{display:flex;justify-content:flex-end;align-items:center;margin-bottom:18px}
+.demo-nav{display:flex;gap:8px;flex-wrap:wrap}
+.demo-nav a{padding:10px 14px;background:#fff;color:#777;border-radius:10px;text-decoration:none;font-size:12px;white-space:nowrap}
+.demo-nav a.active,.demo-nav a:hover{background:#293b98;color:#fff}
+.demo-layout{display:grid;grid-template-columns:230px minmax(0,1fr);gap:18px}
+.demo-side-title{color:#293b98;font-size:19px;line-height:1.35;margin:4px 0 32px}
+.demo-filter{background:#fff;border-radius:18px;padding:16px;margin-bottom:14px}
+.demo-filter h2{font-size:17px;color:#333;margin:0 0 12px}
+.demo-check{display:flex;align-items:center;gap:10px;color:#555;font-size:15px;margin:12px 0;cursor:pointer}
+.demo-check input{width:18px;height:18px;accent-color:#293b98}
+.demo-main{min-width:0}
+.demo-grid-top{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(300px,.85fr);gap:14px}
+.demo-grid-bottom{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(300px,.85fr);gap:14px;margin-top:14px}
+.demo-panel{background:#fff;border-radius:14px;padding:14px;min-width:0}
+.demo-panel h2{font-size:18px;color:#333;text-align:center;margin:0 0 12px}
+.demo-chart{position:relative;height:260px}
+.demo-chart.tall{height:300px}
+.demo-tech{display:flex;align-items:flex-start;gap:14px}
+.demo-tech img{width:72px;height:72px;object-fit:contain;flex-shrink:0}
+.demo-tech h2{text-align:left;margin:22px 0 0}
+.demo-tech-text{height:185px;overflow:auto;color:#444;line-height:1.55;font-size:14px;text-align:justify}
+.demo-source{margin-top:18px;text-align:right;font-size:13px;color:#333}
+.demo-note{margin-top:12px;padding:10px 12px;background:#fff8e8;border:1px solid #f1dfac;border-radius:9px;color:#705b2a;font-size:12px;line-height:1.5}
+.demo-reset{background:#e7ebed;border:0;border-radius:22px;padding:11px 15px;color:#24508d;font-weight:bold;cursor:pointer}
+@media(max-width:950px){.demo-layout{grid-template-columns:200px minmax(0,1fr)}.demo-grid-top,.demo-grid-bottom{grid-template-columns:1fr}.demo-chart{height:260px}}
+@media(max-width:680px){.demo-page{padding:12px}.demo-layout{grid-template-columns:1fr}.demo-side-title{margin-bottom:16px}.demo-filter{margin-bottom:10px}.demo-nav a{padding:9px 10px}.demo-tech-text{height:auto;max-height:220px}.demo-source{text-align:left}}
+</style>
+</head>
+<body>
+<header class="site-header"><div class="header-inner">
+<div class="institutional-logos">
+<img src="assets/escudo.png" alt="Gobierno de Honduras" class="header-logo logo-honduras">
+<img src="assets/logo-injuve1.png" alt="INJUVE" class="header-logo logo-injuve">
+<img src="assets/observatorio nacional.png" alt="Observatorio Nacional de los Derechos de las Juventudes" class="header-logo logo-observatorio">
+</div>
+</div></header>
+<main class="main-shell" style="display:block;min-height:75vh">
+<section class="demo-page">
+<div class="demo-top"><nav class="demo-nav" aria-label="Navegación"><a href="index.html">INICIO</a><a href="datos-demograficos.html" class="active">DEMOGRAFIA</a><a href="mercado-trabajo.html">DATOS SOCIOECONOMICOS</a><a href="educacion.html">EDUCACIÓN</a><a href="comparacion-2024-2025.html">COMPARACIÓN 2024–2025</a><a href="migracion.html">MIGRACION</a><a href="salud-mujeres-jovenes.html">PARTOS</a><a href="seguridad-ciudadana.html">SEGURIDAD CIUDADANA</a></nav></div>
+<div class="demo-layout">
+<aside>
+<h1 class="demo-side-title">POBLACIÓN JOVEN<br>ENTRE 12 - 30 AÑOS</h1>
+<section class="demo-filter"><h2>Año</h2>
+<label class="demo-check"><input type="checkbox" id="allYears" checked> Seleccionar todo</label>
+<div id="yearChecks">
+<label class="demo-check"><input type="checkbox" value="2021" checked> 2021</label>
+<label class="demo-check"><input type="checkbox" value="2022" checked> 2022</label>
+<label class="demo-check"><input type="checkbox" value="2023" checked> 2023</label>
+<label class="demo-check"><input type="checkbox" value="2024" checked> 2024</label>
+<label class="demo-check"><input type="checkbox" value="2025" checked> 2025</label>
+</div>
+</section>
+<button class="demo-reset" id="resetDemo" type="button">↻ Reiniciar filtros</button>
+</aside>
+<div class="demo-main">
+<div class="demo-grid-top">
+<section class="demo-panel"><h2>Población Total</h2><div class="demo-chart"><canvas id="totalChart"></canvas></div></section>
+<section class="demo-panel"><h2>Distribución por Área · 2025</h2><div class="demo-chart"><canvas id="areaChart"></canvas></div></section>
+</div>
+<div class="demo-grid-bottom">
+<section class="demo-panel"><h2>Distribución por Sexo</h2><div class="demo-chart tall"><canvas id="sexChart"></canvas></div></section>
+<section class="demo-panel">
+<div class="demo-tech">
+<img src="assets/Recurso 7DEMOGRÁFIA.png" alt="Icono de Datos Demográficos">
+<h2>Ficha Técnica</h2>
+</div>
+<div class="demo-tech-text">
+<p>El Observatorio Nacional de los Derechos de las Juventudes pone a disposición del público información estadística sobre la población joven de Honduras, comprendida entre los 12 y 30 años de edad.</p>
+<p>Este tablero presenta la población total por año, la distribución por sexo y la distribución por área urbana y rural, según los datos disponibles.</p>
+<p>Los años 2021–2023 corresponden a la serie histórica de la referencia INE–INJUVE 2024. Los valores de 2024–2025 proceden de calculos efectuados de manera propia con datos de la EPHPM.</p>
+</div>
+</section>
+</div>
+<div class="demo-source"><strong>Fuente:</strong> INE–INJUVE 2024 para 2021–2023; Cálculos efectuados de manera propia con datos de la EPHPM, 2026 2024–2025.</div>
+</div>
+</div>
+</section>
+</main>
+<script>
+const population = [
+ {year:2021,total:3354108,men:1666396,women:1687712,source:"INE–INJUVE 2024"},
+ {year:2022,total:3313896,men:1567876,women:1746021,source:"INE–INJUVE 2024"},
+ {year:2023,total:3190136,men:1559922,women:1630214,source:"INE–INJUVE 2024"},
+ {year:2024,total:3272504,men:1554925,women:1717580,source:"Excel"},
+ {year:2025,total:3324670,men:1587076,women:1737593,source:"Excel"}
+];
+const fmt = n => new Intl.NumberFormat("es-HN").format(n);
+const selectedYears = () => [...document.querySelectorAll('#yearChecks input:checked')].map(x=>Number(x.value));
+const totalChart = new Chart(document.getElementById("totalChart"),{
+ type:"bar",data:{labels:[],datasets:[{label:"Población joven",data:[],backgroundColor:"#293b98",borderRadius:0}]},
+ options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{display:false},tooltip:{callbacks:{label:c=>fmt(c.raw)}}},scales:{y:{beginAtZero:false,ticks:{callback:v=>fmt(v)}}}}
+});
+const sexChart = new Chart(document.getElementById("sexChart"),{
+ type:"bar",data:{labels:[],datasets:[
+ {label:"Hombre",data:[],backgroundColor:"#929b9f"},
+ {label:"Mujer",data:[],backgroundColor:"#293b98"}
+ ]},
+ options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{position:"top"} ,tooltip:{callbacks:{label:c=>c.dataset.label+": "+fmt(c.raw)}}},scales:{y:{beginAtZero:false,ticks:{callback:v=>(v/1000000).toFixed(1)+" mill."}}}}
+});
+const areaChart = new Chart(document.getElementById("areaChart"),{
+ type:"doughnut",data:{labels:["Urbana","Rural"],datasets:[{data:[55.47,44.53],backgroundColor:["#293b98","#edf0f2"],borderWidth:0}]},
+ options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{position:"top"},tooltip:{callbacks:{label:c=>c.label+": "+c.raw+"%"}}}}
+});
+function update(){
+ const years=selectedYears();
+ const rows=population.filter(d=>years.includes(d.year));
+ totalChart.data.labels=rows.map(d=>String(d.year));
+ totalChart.data.datasets[0].data=rows.map(d=>d.total);
+ totalChart.update();
+ sexChart.data.labels=rows.map(d=>String(d.year));
+ sexChart.data.datasets[0].data=rows.map(d=>d.men);
+ sexChart.data.datasets[1].data=rows.map(d=>d.women);
+ sexChart.update();
+ document.getElementById("allYears").checked=years.length===5;
+}
+document.querySelectorAll('#yearChecks input').forEach(el=>el.addEventListener("change",()=>{
+ document.getElementById("allYears").checked=selectedYears().length===5;update();
+}));
+document.getElementById("allYears").addEventListener("change",function(){
+ document.querySelectorAll('#yearChecks input').forEach(el=>el.checked=this.checked);update();
+});
+document.getElementById("resetDemo").addEventListener("click",()=>{
+ document.querySelectorAll('#yearChecks input').forEach(el=>el.checked=true);
+ document.getElementById("allYears").checked=true;update();
+});
+update();
+</script>
+</body>
+</html>

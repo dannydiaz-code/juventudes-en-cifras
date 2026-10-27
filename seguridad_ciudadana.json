@@ -1,0 +1,1938 @@
+{
+  "titulo": "Seguridad ciudadana",
+  "año": [
+    {
+      "delito": "Delito sexual",
+      "año": 2014,
+      "cantidad": 3042
+    },
+    {
+      "delito": "Delito sexual",
+      "año": 2015,
+      "cantidad": 1547
+    },
+    {
+      "delito": "Delito sexual",
+      "año": 2016,
+      "cantidad": 1516
+    },
+    {
+      "delito": "Delito sexual",
+      "año": 2017,
+      "cantidad": 1757
+    },
+    {
+      "delito": "Delito sexual",
+      "año": 2018,
+      "cantidad": 1824
+    },
+    {
+      "delito": "Delito sexual",
+      "año": 2020,
+      "cantidad": 1368
+    },
+    {
+      "delito": "Delito sexual",
+      "año": 2021,
+      "cantidad": 2083
+    },
+    {
+      "delito": "Delito sexual",
+      "año": 2022,
+      "cantidad": 2022
+    },
+    {
+      "delito": "Homicidio",
+      "año": 2013,
+      "cantidad": 3079
+    },
+    {
+      "delito": "Homicidio",
+      "año": 2014,
+      "cantidad": 2938
+    },
+    {
+      "delito": "Homicidio",
+      "año": 2015,
+      "cantidad": 2794
+    },
+    {
+      "delito": "Homicidio",
+      "año": 2016,
+      "cantidad": 2747
+    },
+    {
+      "delito": "Homicidio",
+      "año": 2017,
+      "cantidad": 1982
+    },
+    {
+      "delito": "Homicidio",
+      "año": 2018,
+      "cantidad": 1876
+    },
+    {
+      "delito": "Homicidio",
+      "año": 2019,
+      "cantidad": 1952
+    },
+    {
+      "delito": "Homicidio",
+      "año": 2020,
+      "cantidad": 1723
+    },
+    {
+      "delito": "Homicidio",
+      "año": 2021,
+      "cantidad": 1724
+    },
+    {
+      "delito": "Homicidio",
+      "año": 2022,
+      "cantidad": 1556
+    },
+    {
+      "delito": "Homicidio",
+      "año": 2023,
+      "cantidad": 1377
+    },
+    {
+      "delito": "Homicidio",
+      "año": 2024,
+      "cantidad": 337
+    },
+    {
+      "delito": "Lesión",
+      "año": 2013,
+      "cantidad": 971
+    },
+    {
+      "delito": "Lesión",
+      "año": 2014,
+      "cantidad": 785
+    },
+    {
+      "delito": "Lesión",
+      "año": 2015,
+      "cantidad": 675
+    },
+    {
+      "delito": "Lesión",
+      "año": 2016,
+      "cantidad": 653
+    },
+    {
+      "delito": "Lesión",
+      "año": 2017,
+      "cantidad": 591
+    },
+    {
+      "delito": "Lesión",
+      "año": 2018,
+      "cantidad": 514
+    },
+    {
+      "delito": "Lesión",
+      "año": 2019,
+      "cantidad": 524
+    },
+    {
+      "delito": "Lesión",
+      "año": 2020,
+      "cantidad": 440
+    },
+    {
+      "delito": "Maltrato",
+      "año": 2014,
+      "cantidad": 259
+    },
+    {
+      "delito": "Maltrato",
+      "año": 2015,
+      "cantidad": 362
+    },
+    {
+      "delito": "Maltrato",
+      "año": 2016,
+      "cantidad": 330
+    },
+    {
+      "delito": "Maltrato",
+      "año": 2017,
+      "cantidad": 460
+    },
+    {
+      "delito": "Maltrato",
+      "año": 2018,
+      "cantidad": 120
+    },
+    {
+      "delito": "Maltrato",
+      "año": 2019,
+      "cantidad": 440
+    },
+    {
+      "delito": "Maltrato",
+      "año": 2020,
+      "cantidad": 175
+    },
+    {
+      "delito": "Muerte por accidente de tránsito",
+      "año": 2013,
+      "cantidad": 377
+    },
+    {
+      "delito": "Muerte por accidente de tránsito",
+      "año": 2014,
+      "cantidad": 341
+    },
+    {
+      "delito": "Muerte por accidente de tránsito",
+      "año": 2015,
+      "cantidad": 497
+    },
+    {
+      "delito": "Muerte por accidente de tránsito",
+      "año": 2016,
+      "cantidad": 549
+    },
+    {
+      "delito": "Muerte por accidente de tránsito",
+      "año": 2017,
+      "cantidad": 590
+    },
+    {
+      "delito": "Muerte por accidente de tránsito",
+      "año": 2018,
+      "cantidad": 679
+    },
+    {
+      "delito": "Muerte por accidente de tránsito",
+      "año": 2019,
+      "cantidad": 711
+    },
+    {
+      "delito": "Muerte por accidente de tránsito",
+      "año": 2020,
+      "cantidad": 515
+    },
+    {
+      "delito": "Muerte por accidente de tránsito",
+      "año": 2021,
+      "cantidad": 659
+    },
+    {
+      "delito": "Muerte por accidente de tránsito",
+      "año": 2022,
+      "cantidad": 735
+    },
+    {
+      "delito": "Muerte por accidente de tránsito",
+      "año": 2023,
+      "cantidad": 755
+    },
+    {
+      "delito": "Muerte por accidente de tránsito",
+      "año": 2024,
+      "cantidad": 227
+    },
+    {
+      "delito": "Secuestro",
+      "año": 2014,
+      "cantidad": 3042
+    },
+    {
+      "delito": "Secuestro",
+      "año": 2015,
+      "cantidad": 1547
+    },
+    {
+      "delito": "Secuestro",
+      "año": 2016,
+      "cantidad": 1516
+    },
+    {
+      "delito": "Secuestro",
+      "año": 2017,
+      "cantidad": 1757
+    },
+    {
+      "delito": "Secuestro",
+      "año": 2018,
+      "cantidad": 1824
+    },
+    {
+      "delito": "Secuestro",
+      "año": 2020,
+      "cantidad": 1368
+    },
+    {
+      "delito": "Secuestro",
+      "año": 2021,
+      "cantidad": 2083
+    },
+    {
+      "delito": "Secuestro",
+      "año": 2022,
+      "cantidad": 2022
+    },
+    {
+      "delito": "Suicidio",
+      "año": 2013,
+      "cantidad": 3079
+    },
+    {
+      "delito": "Suicidio",
+      "año": 2014,
+      "cantidad": 2938
+    },
+    {
+      "delito": "Suicidio",
+      "año": 2015,
+      "cantidad": 2794
+    },
+    {
+      "delito": "Suicidio",
+      "año": 2016,
+      "cantidad": 2747
+    },
+    {
+      "delito": "Suicidio",
+      "año": 2017,
+      "cantidad": 1982
+    },
+    {
+      "delito": "Suicidio",
+      "año": 2018,
+      "cantidad": 1876
+    },
+    {
+      "delito": "Suicidio",
+      "año": 2019,
+      "cantidad": 1952
+    },
+    {
+      "delito": "Suicidio",
+      "año": 2020,
+      "cantidad": 1723
+    },
+    {
+      "delito": "Suicidio",
+      "año": 2021,
+      "cantidad": 1724
+    },
+    {
+      "delito": "Suicidio",
+      "año": 2022,
+      "cantidad": 1556
+    },
+    {
+      "delito": "Suicidio",
+      "año": 2023,
+      "cantidad": 1377
+    },
+    {
+      "delito": "Suicidio",
+      "año": 2024,
+      "cantidad": 337
+    },
+    {
+      "delito": "Violencia intrafamiliar/doméstica",
+      "año": 2013,
+      "cantidad": 971
+    },
+    {
+      "delito": "Violencia intrafamiliar/doméstica",
+      "año": 2014,
+      "cantidad": 785
+    },
+    {
+      "delito": "Violencia intrafamiliar/doméstica",
+      "año": 2015,
+      "cantidad": 675
+    },
+    {
+      "delito": "Violencia intrafamiliar/doméstica",
+      "año": 2016,
+      "cantidad": 653
+    },
+    {
+      "delito": "Violencia intrafamiliar/doméstica",
+      "año": 2017,
+      "cantidad": 591
+    },
+    {
+      "delito": "Violencia intrafamiliar/doméstica",
+      "año": 2018,
+      "cantidad": 514
+    },
+    {
+      "delito": "Violencia intrafamiliar/doméstica",
+      "año": 2019,
+      "cantidad": 524
+    },
+    {
+      "delito": "Violencia intrafamiliar/doméstica",
+      "año": 2020,
+      "cantidad": 440
+    }
+  ],
+  "sexo": [
+    {
+      "delito": "Delito sexual",
+      "sexo": "Hombre",
+      "cantidad": 1332
+    },
+    {
+      "delito": "Delito sexual",
+      "sexo": "Mujer",
+      "cantidad": 15663
+    },
+    {
+      "delito": "Delito sexual",
+      "sexo": "N/D",
+      "cantidad": 20
+    },
+    {
+      "delito": "Homicidio",
+      "sexo": "Hombre",
+      "cantidad": 21984
+    },
+    {
+      "delito": "Homicidio",
+      "sexo": "Mujer",
+      "cantidad": 2065
+    },
+    {
+      "delito": "Homicidio",
+      "sexo": "N/D",
+      "cantidad": 36
+    },
+    {
+      "delito": "Lesión",
+      "sexo": "Hombre",
+      "cantidad": 4543
+    },
+    {
+      "delito": "Lesión",
+      "sexo": "Mujer",
+      "cantidad": 606
+    },
+    {
+      "delito": "Lesión",
+      "sexo": "N/D",
+      "cantidad": 4
+    },
+    {
+      "delito": "Maltrato",
+      "sexo": "Hombre",
+      "cantidad": 791
+    },
+    {
+      "delito": "Maltrato",
+      "sexo": "Mujer",
+      "cantidad": 1355
+    },
+    {
+      "delito": "Muerte por accidente de tránsito",
+      "sexo": "Hombre",
+      "cantidad": 5716
+    },
+    {
+      "delito": "Muerte por accidente de tránsito",
+      "sexo": "Mujer",
+      "cantidad": 915
+    },
+    {
+      "delito": "Muerte por accidente de tránsito",
+      "sexo": "N/D",
+      "cantidad": 4
+    },
+    {
+      "delito": "Secuestro",
+      "sexo": "Hombre",
+      "cantidad": 71
+    },
+    {
+      "delito": "Secuestro",
+      "sexo": "Mujer",
+      "cantidad": 34
+    },
+    {
+      "delito": "Suicidio",
+      "sexo": "Hombre",
+      "cantidad": 1510
+    },
+    {
+      "delito": "Suicidio",
+      "sexo": "Mujer",
+      "cantidad": 585
+    },
+    {
+      "delito": "Violencia intrafamiliar/doméstica",
+      "sexo": "Hombre",
+      "cantidad": 2916
+    },
+    {
+      "delito": "Violencia intrafamiliar/doméstica",
+      "sexo": "Mujer",
+      "cantidad": 37125
+    },
+    {
+      "delito": "Violencia intrafamiliar/doméstica",
+      "sexo": "N/D",
+      "cantidad": 7
+    }
+  ],
+  "delitos": [
+    {
+      "categoria": "Delito sexual",
+      "tipo": "Violacion",
+      "cantidad": 6108
+    },
+    {
+      "categoria": "Delito sexual",
+      "tipo": "Violacion Especial",
+      "cantidad": 3396
+    },
+    {
+      "categoria": "Delito sexual",
+      "tipo": "Actos de Lujuria",
+      "cantidad": 2165
+    },
+    {
+      "categoria": "Delito sexual",
+      "tipo": "Estrupo",
+      "cantidad": 1817
+    },
+    {
+      "categoria": "Delito sexual",
+      "tipo": "Tentativa de Violacion",
+      "cantidad": 894
+    },
+    {
+      "categoria": "Delito sexual",
+      "tipo": "Rapto",
+      "cantidad": 887
+    },
+    {
+      "categoria": "Delito sexual",
+      "tipo": "Hostigamiento Sexual",
+      "cantidad": 365
+    },
+    {
+      "categoria": "Delito sexual",
+      "tipo": "Otras agreciones Sexuales (Conocidas como actos de lujuria",
+      "cantidad": 346
+    },
+    {
+      "categoria": "Delito sexual",
+      "tipo": "Trata de Personas",
+      "cantidad": 283
+    },
+    {
+      "categoria": "Delito sexual",
+      "tipo": "Trafico ilicito de personas",
+      "cantidad": 150
+    },
+    {
+      "categoria": "Delito sexual",
+      "tipo": "Pornografia infantil",
+      "cantidad": 117
+    },
+    {
+      "categoria": "Delito sexual",
+      "tipo": "Abuso sexual",
+      "cantidad": 99
+    },
+    {
+      "categoria": "Delito sexual",
+      "tipo": "Proxenetismo o celestinaje",
+      "cantidad": 84
+    },
+    {
+      "categoria": "Delito sexual",
+      "tipo": "Tentativa de violacion especial",
+      "cantidad": 54
+    },
+    {
+      "categoria": "Delito sexual",
+      "tipo": "Acoso Sexual",
+      "cantidad": 47
+    },
+    {
+      "categoria": "Delito sexual",
+      "tipo": "Tentativa de Rapto",
+      "cantidad": 45
+    },
+    {
+      "categoria": "Delito sexual",
+      "tipo": "Incesto",
+      "cantidad": 38
+    },
+    {
+      "categoria": "Delito sexual",
+      "tipo": "Explotacion Sexual",
+      "cantidad": 26
+    },
+    {
+      "categoria": "Delito sexual",
+      "tipo": "Relaciones sexuales Remuneradas",
+      "cantidad": 23
+    },
+    {
+      "categoria": "Delito sexual",
+      "tipo": "Pornografia de menores",
+      "cantidad": 22
+    },
+    {
+      "categoria": "Delito sexual",
+      "tipo": "Exhibicionismo",
+      "cantidad": 16
+    },
+    {
+      "categoria": "Delito sexual",
+      "tipo": "Explotacion sexual de menores o personas con discapacidad",
+      "cantidad": 7
+    },
+    {
+      "categoria": "Delito sexual",
+      "tipo": "Elaboracion y utilizacion de pornografia infantil",
+      "cantidad": 6
+    },
+    {
+      "categoria": "Delito sexual",
+      "tipo": "Elaboracion y utilizacion de pornografia infantil",
+      "cantidad": 6
+    },
+    {
+      "categoria": "Delito sexual",
+      "tipo": "Tentativa de estrupo",
+      "cantidad": 6
+    },
+    {
+      "categoria": "Delito sexual",
+      "tipo": "Contacto con finalidad sexual con menores por medios electronicos",
+      "cantidad": 5
+    },
+    {
+      "categoria": "Delito sexual",
+      "tipo": "Explotacion sexual de menores",
+      "cantidad": 4
+    },
+    {
+      "categoria": "Delito sexual",
+      "tipo": "Trafico de personas",
+      "cantidad": 3
+    },
+    {
+      "categoria": "Delito sexual",
+      "tipo": "Contactos con finalidad sexual con menores",
+      "cantidad": 2
+    },
+    {
+      "categoria": "Delito sexual",
+      "tipo": "Provocacion sexual",
+      "cantidad": 2
+    },
+    {
+      "categoria": "Delito sexual",
+      "tipo": "Proxenetismo o celestinaje",
+      "cantidad": 2
+    },
+    {
+      "categoria": "Homicidio",
+      "tipo": "Homicidio",
+      "cantidad": 24085
+    },
+    {
+      "categoria": "Lesión",
+      "tipo": "Lesion por arma de fuego",
+      "cantidad": 3195
+    },
+    {
+      "categoria": "Lesión",
+      "tipo": "Lesion por alma blanca",
+      "cantidad": 862
+    },
+    {
+      "categoria": "Lesión",
+      "tipo": "Actuacion relacionada coronavirus COVID-19",
+      "cantidad": 237
+    },
+    {
+      "categoria": "Lesión",
+      "tipo": "Lesion por arma contundente",
+      "cantidad": 132
+    },
+    {
+      "categoria": "Lesión",
+      "tipo": "Herido por arma de fuego",
+      "cantidad": 121
+    },
+    {
+      "categoria": "Lesión",
+      "tipo": "Lesionado por arma de fuego",
+      "cantidad": 88
+    },
+    {
+      "categoria": "Lesión",
+      "tipo": "Levantamiento cadaverico",
+      "cantidad": 79
+    },
+    {
+      "categoria": "Lesión",
+      "tipo": "Lesionado por arma blanca",
+      "cantidad": 59
+    },
+    {
+      "categoria": "Lesión",
+      "tipo": "Herido por arma blanca",
+      "cantidad": 50
+    },
+    {
+      "categoria": "Lesión",
+      "tipo": "Persona herida por arma de fuego",
+      "cantidad": 35
+    },
+    {
+      "categoria": "Lesión",
+      "tipo": "Heridos por arma de fuego",
+      "cantidad": 33
+    },
+    {
+      "categoria": "Lesión",
+      "tipo": "Persona herida",
+      "cantidad": 19
+    },
+    {
+      "categoria": "Lesión",
+      "tipo": "Lesionado por arma contundente",
+      "cantidad": 16
+    },
+    {
+      "categoria": "Lesión",
+      "tipo": "Herido por arma blanca (machete)",
+      "cantidad": 15
+    },
+    {
+      "categoria": "Lesión",
+      "tipo": "Heridos por arma blanca",
+      "cantidad": 14
+    },
+    {
+      "categoria": "Lesión",
+      "tipo": "Persona herida por arma blanca",
+      "cantidad": 12
+    },
+    {
+      "categoria": "Lesión",
+      "tipo": "Muerto por arma de fuego",
+      "cantidad": 11
+    },
+    {
+      "categoria": "Lesión",
+      "tipo": "Personas heridas por arma de fuego",
+      "cantidad": 11
+    },
+    {
+      "categoria": "Lesión",
+      "tipo": "Persona lesionada",
+      "cantidad": 10
+    },
+    {
+      "categoria": "Lesión",
+      "tipo": "Personas heridas con arma blanca",
+      "cantidad": 9
+    },
+    {
+      "categoria": "Lesión",
+      "tipo": "Policia herido",
+      "cantidad": 8
+    },
+    {
+      "categoria": "Lesión",
+      "tipo": "Manifestacion violeta UNAH",
+      "cantidad": 7
+    },
+    {
+      "categoria": "Lesión",
+      "tipo": "Toma de carretera",
+      "cantidad": 7
+    },
+    {
+      "categoria": "Lesión",
+      "tipo": "Manifestacion",
+      "cantidad": 6
+    },
+    {
+      "categoria": "Lesión",
+      "tipo": "Dos personas heridas por arma de fuego",
+      "cantidad": 5
+    },
+    {
+      "categoria": "Lesión",
+      "tipo": "Desalojo",
+      "cantidad": 4
+    },
+    {
+      "categoria": "Lesión",
+      "tipo": "Enfrentamiento policial",
+      "cantidad": 4
+    },
+    {
+      "categoria": "Lesión",
+      "tipo": "Herido por arma contundente",
+      "cantidad": 4
+    },
+    {
+      "categoria": "Lesión",
+      "tipo": "Heridos y muertos por arma de fuego",
+      "cantidad": 4
+    },
+    {
+      "categoria": "Lesión",
+      "tipo": "Traslado policial a centro medico",
+      "cantidad": 4
+    },
+    {
+      "categoria": "Lesión",
+      "tipo": "Detenido por delito",
+      "cantidad": 3
+    },
+    {
+      "categoria": "Lesión",
+      "tipo": "Muertos y heridos por arma de fuego",
+      "cantidad": 3
+    },
+    {
+      "categoria": "Lesión",
+      "tipo": "Levantamiento de cadaver",
+      "cantidad": 3
+    },
+    {
+      "categoria": "Lesión",
+      "tipo": "Muerto por arma de fuego y lesionados",
+      "cantidad": 3
+    },
+    {
+      "categoria": "Lesión",
+      "tipo": "Muertos por arma de fuego",
+      "cantidad": 3
+    },
+    {
+      "categoria": "Lesión",
+      "tipo": "Operativo en apoyo operación morazan",
+      "cantidad": 3
+    },
+    {
+      "categoria": "Lesión",
+      "tipo": "Persona herida por arma blanca puñal",
+      "cantidad": 3
+    },
+    {
+      "categoria": "Lesión",
+      "tipo": "Persona lesionada por arma de fuego",
+      "cantidad": 3
+    },
+    {
+      "categoria": "Lesión",
+      "tipo": "Policia lesionado",
+      "cantidad": 3
+    },
+    {
+      "categoria": "Lesión",
+      "tipo": "(Comunitaria)Apoyo en manifestaciones",
+      "cantidad": 2
+    },
+    {
+      "categoria": "Lesión",
+      "tipo": "Accion comunitaria",
+      "cantidad": 2
+    },
+    {
+      "categoria": "Lesión",
+      "tipo": "Apoyo y axilio a policias heridos",
+      "cantidad": 2
+    },
+    {
+      "categoria": "Lesión",
+      "tipo": "Desarticulacion de banda",
+      "cantidad": 2
+    },
+    {
+      "categoria": "Lesión",
+      "tipo": "Detenido por delitos varios",
+      "cantidad": 2
+    },
+    {
+      "categoria": "Lesión",
+      "tipo": "Detenido por el delito de violencia domestica",
+      "cantidad": 2
+    },
+    {
+      "categoria": "Lesión",
+      "tipo": "Detenido por tentativa de homicidio y lesiones",
+      "cantidad": 2
+    },
+    {
+      "categoria": "Lesión",
+      "tipo": "Herido por arma contundente (envase)",
+      "cantidad": 2
+    },
+    {
+      "categoria": "Lesión",
+      "tipo": "Herido por arma contundente (piedra)",
+      "cantidad": 2
+    },
+    {
+      "categoria": "Lesión",
+      "tipo": "Labor social",
+      "cantidad": 2
+    },
+    {
+      "categoria": "Lesión",
+      "tipo": "Lesionado por objeto contundente",
+      "cantidad": 2
+    },
+    {
+      "categoria": "Lesión",
+      "tipo": "Lesionado con arma de fuego",
+      "cantidad": 2
+    },
+    {
+      "categoria": "Lesión",
+      "tipo": "Persona herida por arma contundente",
+      "cantidad": 2
+    },
+    {
+      "categoria": "Lesión",
+      "tipo": "Policia herido en enfrentamiento por arma de fuego",
+      "cantidad": 2
+    },
+    {
+      "categoria": "Lesión",
+      "tipo": "Traslado de ciudadano a centro hospitalarario",
+      "cantidad": 2
+    },
+    {
+      "categoria": "Lesión",
+      "tipo": "Traslado de persona",
+      "cantidad": 2
+    },
+    {
+      "categoria": "Lesión",
+      "tipo": "Aspirante a policia lesionado",
+      "cantidad": 1
+    },
+    {
+      "categoria": "Lesión",
+      "tipo": "Detenido infragante por homicidio",
+      "cantidad": 1
+    },
+    {
+      "categoria": "Lesión",
+      "tipo": "Detenido por delito de tentativa de Homicidio",
+      "cantidad": 1
+    },
+    {
+      "categoria": "Lesión",
+      "tipo": "Detenido por facilitacion de transporte para el trafico de drogas",
+      "cantidad": 1
+    },
+    {
+      "categoria": "Lesión",
+      "tipo": "Detenido por falta",
+      "cantidad": 1
+    },
+    {
+      "categoria": "Lesión",
+      "tipo": "Detenido por homicidio y robo",
+      "cantidad": 1
+    },
+    {
+      "categoria": "Lesión",
+      "tipo": "Detenido por portacion ilegal de arma de fuego y tentativa de homicidio",
+      "cantidad": 1
+    },
+    {
+      "categoria": "Lesión",
+      "tipo": "Detenido por robo",
+      "cantidad": 1
+    },
+    {
+      "categoria": "Lesión",
+      "tipo": "Detenido por robo y homicidio",
+      "cantidad": 1
+    },
+    {
+      "categoria": "Lesión",
+      "tipo": "Detenido por robo y tentativa",
+      "cantidad": 1
+    },
+    {
+      "categoria": "Lesión",
+      "tipo": "Detenido por tentativa y homicidio",
+      "cantidad": 1
+    },
+    {
+      "categoria": "Lesión",
+      "tipo": "Detenido por Violencia intrfamiliar",
+      "cantidad": 1
+    },
+    {
+      "categoria": "Lesión",
+      "tipo": "Detenido violencia intrafamiliar",
+      "cantidad": 1
+    },
+    {
+      "categoria": "Lesión",
+      "tipo": "Detenidos por el delito de robos",
+      "cantidad": 1
+    },
+    {
+      "categoria": "Lesión",
+      "tipo": "Detenidos por faltas",
+      "cantidad": 1
+    },
+    {
+      "categoria": "Lesión",
+      "tipo": "Detenidos por robos a personas",
+      "cantidad": 1
+    },
+    {
+      "categoria": "Lesión",
+      "tipo": "Detenidos por tentativa de robo y portacion ilegal de armas",
+      "cantidad": 1
+    },
+    {
+      "categoria": "Lesión",
+      "tipo": "Exhumacion de cadaver",
+      "cantidad": 1
+    },
+    {
+      "categoria": "Lesión",
+      "tipo": "Herido por arma blanca (puñal)",
+      "cantidad": 1
+    },
+    {
+      "categoria": "Lesión",
+      "tipo": "Herido por arma contundente (palo)",
+      "cantidad": 1
+    },
+    {
+      "categoria": "Lesión",
+      "tipo": "Herido por arma de fuego en enfrentamiento",
+      "cantidad": 1
+    },
+    {
+      "categoria": "Lesión",
+      "tipo": "Homicidio multiple",
+      "cantidad": 1
+    },
+    {
+      "categoria": "Lesión",
+      "tipo": "Lesionado en accidente de transito",
+      "cantidad": 1
+    },
+    {
+      "categoria": "Lesión",
+      "tipo": "Lesionado con arma contundente",
+      "cantidad": 1
+    },
+    {
+      "categoria": "Lesión",
+      "tipo": "Manifestacion violeta",
+      "cantidad": 1
+    },
+    {
+      "categoria": "Lesión",
+      "tipo": "Menor herido por arma de fuego",
+      "cantidad": 1
+    },
+    {
+      "categoria": "Lesión",
+      "tipo": "Muerte por arma de fuego",
+      "cantidad": 1
+    },
+    {
+      "categoria": "Lesión",
+      "tipo": "Muerto por arma blanca",
+      "cantidad": 1
+    },
+    {
+      "categoria": "Lesión",
+      "tipo": "Muerte y herido por arma de fuego",
+      "cantidad": 1
+    },
+    {
+      "categoria": "Lesión",
+      "tipo": "Persona muerta por arma de fuego",
+      "cantidad": 1
+    },
+    {
+      "categoria": "Lesión",
+      "tipo": "Policia herido en enfrentamiento",
+      "cantidad": 1
+    },
+    {
+      "categoria": "Lesión",
+      "tipo": "Policia herido por proyectil disparado por arma de fuego",
+      "cantidad": 1
+    },
+    {
+      "categoria": "Lesión",
+      "tipo": "Policias heridos en enfrentamiento",
+      "cantidad": 1
+    },
+    {
+      "categoria": "Lesión",
+      "tipo": "Tomar de nota herido en centro hospitalario",
+      "cantidad": 1
+    },
+    {
+      "categoria": "Maltrato",
+      "tipo": "Maltrato por transgrecion",
+      "cantidad": 2111
+    },
+    {
+      "categoria": "Maltrato",
+      "tipo": "Maltrato por omision",
+      "cantidad": 33
+    },
+    {
+      "categoria": "Maltrato",
+      "tipo": "Maltrato por supresion",
+      "cantidad": 2
+    },
+    {
+      "categoria": "Maltrato",
+      "tipo": "Muerte por accidente de transito",
+      "cantidad": 6635
+    },
+    {
+      "categoria": "Maltrato",
+      "tipo": "Secuestros",
+      "cantidad": 105
+    },
+    {
+      "categoria": "Maltrato",
+      "tipo": "Suicidio",
+      "cantidad": 2095
+    },
+    {
+      "categoria": "Violencia intrafamiliar/doméstica",
+      "tipo": "Violencia intrafamiliar/ domestica",
+      "cantidad": 9812
+    },
+    {
+      "categoria": "Violencia intrafamiliar/doméstica",
+      "tipo": "Violencia domestica psicologica",
+      "cantidad": 7871
+    },
+    {
+      "categoria": "Violencia intrafamiliar/doméstica",
+      "tipo": "Violencia domestica por causa ignorada",
+      "cantidad": 7612
+    },
+    {
+      "categoria": "Violencia intrafamiliar/doméstica",
+      "tipo": "Violencia domestica fisica",
+      "cantidad": 7456
+    },
+    {
+      "categoria": "Violencia intrafamiliar/doméstica",
+      "tipo": "Violencia intrafamiliar por causa ignorada",
+      "cantidad": 3871
+    },
+    {
+      "categoria": "Violencia intrafamiliar/doméstica",
+      "tipo": "Violencia domestica patrimonial",
+      "cantidad": 1708
+    },
+    {
+      "categoria": "Violencia intrafamiliar/doméstica",
+      "tipo": "Violencia intrafamilar",
+      "cantidad": 868
+    },
+    {
+      "categoria": "Violencia intrafamiliar/doméstica",
+      "tipo": "Violencia contra la mujer",
+      "cantidad": 561
+    },
+    {
+      "categoria": "Violencia intrafamiliar/doméstica",
+      "tipo": "Violencia domestica sexual",
+      "cantidad": 198
+    },
+    {
+      "categoria": "Violencia intrafamiliar/doméstica",
+      "tipo": "Violencia contra la mujer",
+      "cantidad": 91
+    }
+  ],
+  "edad": [
+    {
+      "delito": "Delito sexual",
+      "edad": 12,
+      "cantidad": 1703
+    },
+    {
+      "delito": "Delito sexual",
+      "edad": 13,
+      "cantidad": 2841
+    },
+    {
+      "delito": "Delito sexual",
+      "edad": 14,
+      "cantidad": 2924
+    },
+    {
+      "delito": "Delito sexual",
+      "edad": 15,
+      "cantidad": 2116
+    },
+    {
+      "delito": "Delito sexual",
+      "edad": 16,
+      "cantidad": 1710
+    },
+    {
+      "delito": "Delito sexual",
+      "edad": 17,
+      "cantidad": 1266
+    },
+    {
+      "delito": "Delito sexual",
+      "edad": 18,
+      "cantidad": 629
+    },
+    {
+      "delito": "Delito sexual",
+      "edad": 19,
+      "cantidad": 551
+    },
+    {
+      "delito": "Delito sexual",
+      "edad": 20,
+      "cantidad": 431
+    },
+    {
+      "delito": "Delito sexual",
+      "edad": 21,
+      "cantidad": 410
+    },
+    {
+      "delito": "Delito sexual",
+      "edad": 22,
+      "cantidad": 322
+    },
+    {
+      "delito": "Delito sexual",
+      "edad": 23,
+      "cantidad": 326
+    },
+    {
+      "delito": "Delito sexual",
+      "edad": 24,
+      "cantidad": 281
+    },
+    {
+      "delito": "Delito sexual",
+      "edad": 25,
+      "cantidad": 321
+    },
+    {
+      "delito": "Delito sexual",
+      "edad": 26,
+      "cantidad": 266
+    },
+    {
+      "delito": "Delito sexual",
+      "edad": 27,
+      "cantidad": 231
+    },
+    {
+      "delito": "Delito sexual",
+      "edad": 28,
+      "cantidad": 256
+    },
+    {
+      "delito": "Delito sexual",
+      "edad": 29,
+      "cantidad": 191
+    },
+    {
+      "delito": "Delito sexual",
+      "edad": 30,
+      "cantidad": 240
+    },
+    {
+      "delito": "Homicidio",
+      "edad": 12,
+      "cantidad": 49
+    },
+    {
+      "delito": "Homicidio",
+      "edad": 13,
+      "cantidad": 103
+    },
+    {
+      "delito": "Homicidio",
+      "edad": 14,
+      "cantidad": 229
+    },
+    {
+      "delito": "Homicidio",
+      "edad": 15,
+      "cantidad": 436
+    },
+    {
+      "delito": "Homicidio",
+      "edad": 16,
+      "cantidad": 668
+    },
+    {
+      "delito": "Homicidio",
+      "edad": 17,
+      "cantidad": 1042
+    },
+    {
+      "delito": "Homicidio",
+      "edad": 18,
+      "cantidad": 1285
+    },
+    {
+      "delito": "Homicidio",
+      "edad": 19,
+      "cantidad": 1283
+    },
+    {
+      "delito": "Homicidio",
+      "edad": 20,
+      "cantidad": 1880
+    },
+    {
+      "delito": "Homicidio",
+      "edad": 21,
+      "cantidad": 1575
+    },
+    {
+      "delito": "Homicidio",
+      "edad": 22,
+      "cantidad": 1650
+    },
+    {
+      "delito": "Homicidio",
+      "edad": 23,
+      "cantidad": 1875
+    },
+    {
+      "delito": "Homicidio",
+      "edad": 24,
+      "cantidad": 1657
+    },
+    {
+      "delito": "Homicidio",
+      "edad": 25,
+      "cantidad": 2279
+    },
+    {
+      "delito": "Homicidio",
+      "edad": 26,
+      "cantidad": 1567
+    },
+    {
+      "delito": "Homicidio",
+      "edad": 27,
+      "cantidad": 1644
+    },
+    {
+      "delito": "Homicidio",
+      "edad": 28,
+      "cantidad": 1578
+    },
+    {
+      "delito": "Homicidio",
+      "edad": 29,
+      "cantidad": 1337
+    },
+    {
+      "delito": "Homicidio",
+      "edad": 30,
+      "cantidad": 1948
+    },
+    {
+      "delito": "Lesión",
+      "edad": 12,
+      "cantidad": 31
+    },
+    {
+      "delito": "Lesión",
+      "edad": 13,
+      "cantidad": 48
+    },
+    {
+      "delito": "Lesión",
+      "edad": 14,
+      "cantidad": 77
+    },
+    {
+      "delito": "Lesión",
+      "edad": 15,
+      "cantidad": 110
+    },
+    {
+      "delito": "Lesión",
+      "edad": 16,
+      "cantidad": 187
+    },
+    {
+      "delito": "Lesión",
+      "edad": 17,
+      "cantidad": 250
+    },
+    {
+      "delito": "Lesión",
+      "edad": 18,
+      "cantidad": 306
+    },
+    {
+      "delito": "Lesión",
+      "edad": 19,
+      "cantidad": 278
+    },
+    {
+      "delito": "Lesión",
+      "edad": 20,
+      "cantidad": 372
+    },
+    {
+      "delito": "Lesión",
+      "edad": 21,
+      "cantidad": 355
+    },
+    {
+      "delito": "Lesión",
+      "edad": 22,
+      "cantidad": 411
+    },
+    {
+      "delito": "Lesión",
+      "edad": 23,
+      "cantidad": 378
+    },
+    {
+      "delito": "Lesión",
+      "edad": 24,
+      "cantidad": 377
+    },
+    {
+      "delito": "Lesión",
+      "edad": 25,
+      "cantidad": 382
+    },
+    {
+      "delito": "Lesión",
+      "edad": 26,
+      "cantidad": 330
+    },
+    {
+      "delito": "Lesión",
+      "edad": 27,
+      "cantidad": 304
+    },
+    {
+      "delito": "Lesión",
+      "edad": 28,
+      "cantidad": 318
+    },
+    {
+      "delito": "Lesión",
+      "edad": 29,
+      "cantidad": 244
+    },
+    {
+      "delito": "Lesión",
+      "edad": 30,
+      "cantidad": 395
+    },
+    {
+      "delito": "Maltrato",
+      "edad": 12,
+      "cantidad": 351
+    },
+    {
+      "delito": "Maltrato",
+      "edad": 13,
+      "cantidad": 351
+    },
+    {
+      "delito": "Maltrato",
+      "edad": 14,
+      "cantidad": 373
+    },
+    {
+      "delito": "Maltrato",
+      "edad": 15,
+      "cantidad": 356
+    },
+    {
+      "delito": "Maltrato",
+      "edad": 16,
+      "cantidad": 280
+    },
+    {
+      "delito": "Maltrato",
+      "edad": 17,
+      "cantidad": 260
+    },
+    {
+      "delito": "Maltrato",
+      "edad": 18,
+      "cantidad": 22
+    },
+    {
+      "delito": "Maltrato",
+      "edad": 19,
+      "cantidad": 18
+    },
+    {
+      "delito": "Maltrato",
+      "edad": 20,
+      "cantidad": 13
+    },
+    {
+      "delito": "Maltrato",
+      "edad": 21,
+      "cantidad": 24
+    },
+    {
+      "delito": "Maltrato",
+      "edad": 22,
+      "cantidad": 12
+    },
+    {
+      "delito": "Maltrato",
+      "edad": 23,
+      "cantidad": 4
+    },
+    {
+      "delito": "Maltrato",
+      "edad": 24,
+      "cantidad": 7
+    },
+    {
+      "delito": "Maltrato",
+      "edad": 25,
+      "cantidad": 13
+    },
+    {
+      "delito": "Maltrato",
+      "edad": 26,
+      "cantidad": 9
+    },
+    {
+      "delito": "Maltrato",
+      "edad": 27,
+      "cantidad": 13
+    },
+    {
+      "delito": "Maltrato",
+      "edad": 28,
+      "cantidad": 13
+    },
+    {
+      "delito": "Maltrato",
+      "edad": 29,
+      "cantidad": 16
+    },
+    {
+      "delito": "Maltrato",
+      "edad": 30,
+      "cantidad": 11
+    },
+    {
+      "delito": "Muerte por accidente de tránsito",
+      "edad": 12,
+      "cantidad": 72
+    },
+    {
+      "delito": "Muerte por accidente de tránsito",
+      "edad": 13,
+      "cantidad": 87
+    },
+    {
+      "delito": "Muerte por accidente de tránsito",
+      "edad": 14,
+      "cantidad": 119
+    },
+    {
+      "delito": "Muerte por accidente de tránsito",
+      "edad": 15,
+      "cantidad": 147
+    },
+    {
+      "delito": "Muerte por accidente de tránsito",
+      "edad": 16,
+      "cantidad": 180
+    },
+    {
+      "delito": "Muerte por accidente de tránsito",
+      "edad": 17,
+      "cantidad": 247
+    },
+    {
+      "delito": "Muerte por accidente de tránsito",
+      "edad": 18,
+      "cantidad": 332
+    },
+    {
+      "delito": "Muerte por accidente de tránsito",
+      "edad": 19,
+      "cantidad": 365
+    },
+    {
+      "delito": "Muerte por accidente de tránsito",
+      "edad": 20,
+      "cantidad": 445
+    },
+    {
+      "delito": "Muerte por accidente de tránsito",
+      "edad": 21,
+      "cantidad": 451
+    },
+    {
+      "delito": "Muerte por accidente de tránsito",
+      "edad": 22,
+      "cantidad": 511
+    },
+    {
+      "delito": "Muerte por accidente de tránsito",
+      "edad": 23,
+      "cantidad": 528
+    },
+    {
+      "delito": "Muerte por accidente de tránsito",
+      "edad": 24,
+      "cantidad": 484
+    },
+    {
+      "delito": "Muerte por accidente de tránsito",
+      "edad": 25,
+      "cantidad": 534
+    },
+    {
+      "delito": "Muerte por accidente de tránsito",
+      "edad": 26,
+      "cantidad": 416
+    },
+    {
+      "delito": "Muerte por accidente de tránsito",
+      "edad": 27,
+      "cantidad": 422
+    },
+    {
+      "delito": "Muerte por accidente de tránsito",
+      "edad": 28,
+      "cantidad": 442
+    },
+    {
+      "delito": "Muerte por accidente de tránsito",
+      "edad": 29,
+      "cantidad": 368
+    },
+    {
+      "delito": "Muerte por accidente de tránsito",
+      "edad": 30,
+      "cantidad": 485
+    },
+    {
+      "delito": "Secuestro",
+      "edad": 12,
+      "cantidad": 6
+    },
+    {
+      "delito": "Secuestro",
+      "edad": 13,
+      "cantidad": 3
+    },
+    {
+      "delito": "Secuestro",
+      "edad": 14,
+      "cantidad": 1
+    },
+    {
+      "delito": "Secuestro",
+      "edad": 15,
+      "cantidad": 4
+    },
+    {
+      "delito": "Secuestro",
+      "edad": 16,
+      "cantidad": 5
+    },
+    {
+      "delito": "Secuestro",
+      "edad": 17,
+      "cantidad": 6
+    },
+    {
+      "delito": "Secuestro",
+      "edad": 18,
+      "cantidad": 9
+    },
+    {
+      "delito": "Secuestro",
+      "edad": 19,
+      "cantidad": 13
+    },
+    {
+      "delito": "Secuestro",
+      "edad": 20,
+      "cantidad": 2
+    },
+    {
+      "delito": "Secuestro",
+      "edad": 21,
+      "cantidad": 3
+    },
+    {
+      "delito": "Secuestro",
+      "edad": 22,
+      "cantidad": 5
+    },
+    {
+      "delito": "Secuestro",
+      "edad": 23,
+      "cantidad": 8
+    },
+    {
+      "delito": "Secuestro",
+      "edad": 24,
+      "cantidad": 13
+    },
+    {
+      "delito": "Secuestro",
+      "edad": 25,
+      "cantidad": 9
+    },
+    {
+      "delito": "Secuestro",
+      "edad": 26,
+      "cantidad": 3
+    },
+    {
+      "delito": "Secuestro",
+      "edad": 27,
+      "cantidad": 6
+    },
+    {
+      "delito": "Secuestro",
+      "edad": 28,
+      "cantidad": 4
+    },
+    {
+      "delito": "Secuestro",
+      "edad": 29,
+      "cantidad": 4
+    },
+    {
+      "delito": "Secuestro",
+      "edad": 30,
+      "cantidad": 1
+    },
+    {
+      "delito": "Suicidio",
+      "edad": 12,
+      "cantidad": 27
+    },
+    {
+      "delito": "Suicidio",
+      "edad": 13,
+      "cantidad": 38
+    },
+    {
+      "delito": "Suicidio",
+      "edad": 14,
+      "cantidad": 59
+    },
+    {
+      "delito": "Suicidio",
+      "edad": 15,
+      "cantidad": 86
+    },
+    {
+      "delito": "Suicidio",
+      "edad": 16,
+      "cantidad": 101
+    },
+    {
+      "delito": "Suicidio",
+      "edad": 17,
+      "cantidad": 117
+    },
+    {
+      "delito": "Suicidio",
+      "edad": 18,
+      "cantidad": 135
+    },
+    {
+      "delito": "Suicidio",
+      "edad": 19,
+      "cantidad": 124
+    },
+    {
+      "delito": "Suicidio",
+      "edad": 20,
+      "cantidad": 126
+    },
+    {
+      "delito": "Suicidio",
+      "edad": 21,
+      "cantidad": 148
+    },
+    {
+      "delito": "Suicidio",
+      "edad": 22,
+      "cantidad": 169
+    },
+    {
+      "delito": "Suicidio",
+      "edad": 23,
+      "cantidad": 128
+    },
+    {
+      "delito": "Suicidio",
+      "edad": 24,
+      "cantidad": 116
+    },
+    {
+      "delito": "Suicidio",
+      "edad": 25,
+      "cantidad": 130
+    },
+    {
+      "delito": "Suicidio",
+      "edad": 26,
+      "cantidad": 152
+    },
+    {
+      "delito": "Suicidio",
+      "edad": 27,
+      "cantidad": 108
+    },
+    {
+      "delito": "Suicidio",
+      "edad": 28,
+      "cantidad": 119
+    },
+    {
+      "delito": "Suicidio",
+      "edad": 29,
+      "cantidad": 117
+    },
+    {
+      "delito": "Suicidio",
+      "edad": 30,
+      "cantidad": 96
+    },
+    {
+      "delito": "Violencia intrafamiliar/doméstica",
+      "edad": 12,
+      "cantidad": 51
+    },
+    {
+      "delito": "Violencia intrafamiliar/doméstica",
+      "edad": 13,
+      "cantidad": 71
+    },
+    {
+      "delito": "Violencia intrafamiliar/doméstica",
+      "edad": 14,
+      "cantidad": 180
+    },
+    {
+      "delito": "Violencia intrafamiliar/doméstica",
+      "edad": 15,
+      "cantidad": 341
+    },
+    {
+      "delito": "Violencia intrafamiliar/doméstica",
+      "edad": 16,
+      "cantidad": 618
+    },
+    {
+      "delito": "Violencia intrafamiliar/doméstica",
+      "edad": 17,
+      "cantidad": 1055
+    },
+    {
+      "delito": "Violencia intrafamiliar/doméstica",
+      "edad": 18,
+      "cantidad": 1552
+    },
+    {
+      "delito": "Violencia intrafamiliar/doméstica",
+      "edad": 19,
+      "cantidad": 1927
+    },
+    {
+      "delito": "Violencia intrafamiliar/doméstica",
+      "edad": 20,
+      "cantidad": 2276
+    },
+    {
+      "delito": "Violencia intrafamiliar/doméstica",
+      "edad": 21,
+      "cantidad": 2678
+    },
+    {
+      "delito": "Violencia intrafamiliar/doméstica",
+      "edad": 22,
+      "cantidad": 2953
+    },
+    {
+      "delito": "Violencia intrafamiliar/doméstica",
+      "edad": 23,
+      "cantidad": 3209
+    },
+    {
+      "delito": "Violencia intrafamiliar/doméstica",
+      "edad": 24,
+      "cantidad": 3253
+    },
+    {
+      "delito": "Violencia intrafamiliar/doméstica",
+      "edad": 25,
+      "cantidad": 3334
+    },
+    {
+      "delito": "Violencia intrafamiliar/doméstica",
+      "edad": 26,
+      "cantidad": 3223
+    },
+    {
+      "delito": "Violencia intrafamiliar/doméstica",
+      "edad": 27,
+      "cantidad": 3177
+    },
+    {
+      "delito": "Violencia intrafamiliar/doméstica",
+      "edad": 28,
+      "cantidad": 3457
+    },
+    {
+      "delito": "Violencia intrafamiliar/doméstica",
+      "edad": 29,
+      "cantidad": 3234
+    },
+    {
+      "delito": "Violencia intrafamiliar/doméstica",
+      "edad": 30,
+      "cantidad": 3453
+    }
+  ],
+  "fuente": "Observatorio Nacional de los Derechos de las Juventudes",
+  "nota_fuente": "Los gráficos utilizan únicamente los registros presentes en el Excel. Las hojas Año, Sexo, Delito y Edad no comparten todos los mismos desgloses; por ello cada gráfico solo aparece cuando hay datos para la categoría seleccionada. El filtro de año afecta el gráfico anual; sexo y edad son totales generales porque el Excel no los desglosa por año."
+}

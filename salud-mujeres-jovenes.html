@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Salud de Mujeres Jóvenes | Juventudes en Cifras</title>
+<link rel="stylesheet" href="css/styles.css">
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<style>
+/* Estilos locales del tablero; conserva el encabezado institucional de styles.css */
+.health-page{max-width:1500px;margin:0 auto;padding:24px 20px 14px}
+.health-title{font-size:20px;color:#293b98;font-weight:700;text-transform:uppercase;margin:0}
+.health-top{display:flex;align-items:center;justify-content:space-between;gap:18px;flex-wrap:wrap;margin-bottom:16px}
+.health-nav{display:flex;gap:8px;flex-wrap:wrap}
+.health-nav a{display:inline-block;background:#fff;color:#777;border-radius:9px;padding:10px 15px;font-size:11px;text-decoration:none}
+.health-nav a.active,.health-nav a:hover{background:#293b98;color:#fff}
+.health-grid{display:grid;grid-template-columns:185px minmax(0,1fr) 215px;gap:14px;align-items:stretch}
+.health-panel{background:#fff;border-radius:14px;padding:14px;min-width:0;box-shadow:0 1px 3px #17255408}
+.health-filter h3{font-size:14px;margin:0 0 10px;color:#333}
+.health-year{display:flex;align-items:center;gap:8px;font-size:14px;margin:10px 2px}
+.health-year input{accent-color:#222;width:15px;height:15px}
+.health-center{display:grid;grid-template-rows:285px 255px;gap:12px;min-width:0}
+.health-chart-title{text-align:center;font-size:15px;font-weight:500;margin:0 0 8px;color:#333}
+.health-chart-area{height:calc(100% - 26px);min-height:190px;position:relative}
+.health-lower{display:grid;grid-template-columns:1.15fr .85fr;gap:14px;min-width:0}
+.health-table{padding:0;max-height:285px;overflow:hidden;display:flex;flex-direction:column}
+.health-table-scroll{overflow:auto;max-height:255px}
+.health-table table{border-collapse:collapse;width:100%;font-size:12px}
+.health-table th{position:sticky;top:0;background:#fff;font-weight:500;text-align:left}
+.health-table td,.health-table th{padding:5px 8px;white-space:nowrap}
+.health-table tbody tr:nth-child(even){background:#eee}
+.health-table tfoot{position:sticky;bottom:0;background:#fff;font-weight:bold}
+.health-tech{overflow:auto;max-height:255px}
+.health-tech-head{display:flex;justify-content:center;align-items:center;gap:14px;margin:2px 0 14px}
+.health-icon{font-size:32px;color:#43abc2}
+.health-tech h3{font-size:14px;margin:0}
+.health-tech p{font-size:12px;line-height:1.5;text-align:justify;margin:8px 0 12px}
+.health-source{text-align:right;font-size:12px;padding:0 6px 8px}
+.health-kpis{display:flex;gap:8px;margin-bottom:10px;flex-wrap:wrap}
+.health-kpi{background:#f2f8f9;border-radius:8px;padding:8px 11px;flex:1;min-width:100px}
+.health-kpi span{display:block;color:#69777b;font-size:11px}
+.health-kpi strong{font-size:17px;color:#293b98}
+.health-note{font-size:11px;line-height:1.4;color:#687579}
+@media(max-width:1050px){.health-grid{grid-template-columns:160px minmax(0,1fr)}.health-table{grid-column:1/-1;max-height:260px}.health-center{grid-template-rows:285px auto}.health-lower{grid-template-columns:1fr}.health-tech{max-height:none}}
+@media(max-width:650px){.health-page{padding:15px 10px}.health-grid{grid-template-columns:1fr}.health-center{grid-template-rows:290px 260px}.health-table{grid-column:auto}.health-filter{padding:12px}.health-year{display:inline-flex;margin-right:10px}.health-top{align-items:flex-start}.health-title{font-size:16px}.health-lower{gap:10px}}
+</style>
+</head>
+<body>
+<header class="site-header"><div class="header-inner">
+  <div class="institutional-logos">
+    <img src="assets/escudo.png" alt="Gobierno de Honduras" class="header-logo logo-honduras">
+    <img src="assets/logo-injuve1.png" alt="INJUVE" class="header-logo logo-injuve">
+    <img src="assets/observatorio nacional.png" alt="Observatorio Nacional de los Derechos de las Juventudes" class="header-logo logo-observatorio">
+  </div>
+</div></header>
+<main class="main-shell" style="display:block;min-height:75vh;">
+<div class="health-page">
+  <div class="health-top">
+    <h1 class="health-title">Partos en Mujeres Jóvenes</h1>
+    <nav class="health-nav">
+      <a href="index.html">INICIO</a>
+      <a class="active" href="salud-mujeres-jovenes.html">PARTOS</a>
+      <a href="datos-demograficos.html">DEMOGRAFIA</a>
+      <a href="mercado-trabajo.html">DATOS SOCIOECONOMICOS</a>
+      <a href="educacion.html">EDUCACION</a>
+      <a href="comparacion-2024-2025.html">COMPARACION 2024-2025</a>
+      <a href="migracion.html">MIGRACION</a>
+      <a href="seguridad-ciudadana.html">SEGURIDAD CIUDADANA</a>
+    </nav>
+  </div>
+  <div class="health-grid">
+    <aside class="health-panel health-filter">
+      <h3>Año</h3>
+      <label class="health-year"><input id="allYears" type="checkbox" checked> Seleccionar todo</label>
+      <div id="yearOptions"></div>
+    </aside>
+    <section class="health-center">
+      <div class="health-panel">
+        <h2 class="health-chart-title">Distribución por Edad</h2>
+        <div class="health-chart-area"><canvas id="ageChart"></canvas></div>
+      </div>
+      <div class="health-lower">
+        <div class="health-panel">
+          <h2 class="health-chart-title">Distribución por Año</h2>
+          <div class="health-chart-area"><canvas id="yearChart"></canvas></div>
+        </div>
+        <section class="health-panel health-tech">
+          <div class="health-tech-head">
+    <div class="health-tech-icon">
+        <img src="assets/logo salud en mujeres.png" alt="Logo INJUVE">
+    </div>
+    <h3>Ficha Técnica</h3>
+</div>
+          <p>El Observatorio Nacional de los Derechos de las Juventudes pone a disposición del público información estadística sobre el acceso de mujeres jóvenes de 12 a 30 años a servicios de salud.</p>
+          <p>Este apartado presenta información sobre partos en mujeres jóvenes a nivel nacional, desagregada por edad y año.</p>
+          <p class="health-note" id="methodology"></p>
+        </section>
+      </div>
+    </section>
+    <aside class="health-panel health-table">
+      <div class="health-table-scroll"><table><thead><tr><th>Año</th><th>Edad</th><th>Cantidad</th></tr></thead><tbody id="dataRows"></tbody><tfoot><tr><td colspan="2">Total</td><td id="grandTotal">—</td></tr></tfoot></table></div>
+    </aside>
+  </div>
+  <div class="health-source"><strong>Fuente:</strong> Secretaría de Salud <strong>SESAL</strong></div>
+</div>
+</main>
+<script>
+let dataset, ageChart, yearChart;
+const fmt=n=>Number(n).toLocaleString('en-US');
+const chartOpts={responsive:true,maintainAspectRatio:false,plugins:{legend:{display:false},tooltip:{callbacks:{label:c=>fmt(c.raw)}}},scales:{x:{grid:{display:false},ticks:{color:'#666'}},y:{beginAtZero:true,grid:{color:'#dce2e3'},ticks:{callback:v=>v>=1000?(v/1000)+' mil':v,color:'#666'}}}};
+fetch('data/partos_mujeres_jovenes.json').then(r=>r.json()).then(d=>{dataset=d;init();}).catch(()=>{document.getElementById('dataRows').innerHTML='<tr><td colspan="3">No se pudo cargar el JSON. Abre el proyecto con Live Server.</td></tr>';});
+function init(){
+ const years=[...new Set(dataset.detalle.map(x=>x.Año))].sort((a,b)=>a-b);
+ document.getElementById('yearOptions').innerHTML=years.map(y=>`<label class="health-year"><input type="checkbox" class="yearCheck" value="${y}" checked> ${y}</label>`).join('');
+ document.getElementById('allYears').addEventListener('change',e=>{document.querySelectorAll('.yearCheck').forEach(c=>c.checked=e.target.checked);update();});
+ document.querySelectorAll('.yearCheck').forEach(c=>c.addEventListener('change',()=>{document.getElementById('allYears').checked=[...document.querySelectorAll('.yearCheck')].every(x=>x.checked);update();}));
+ const ageLabels=[...new Set(dataset.detalle.map(x=>x.Edad))].sort((a,b)=>a-b);
+ ageChart=new Chart(document.getElementById('ageChart'),{type:'bar',data:{labels:ageLabels,datasets:[{data:ageLabels.map(age=>dataset.detalle.filter(x=>x.Edad===age).reduce((s,x)=>s+x.Cantidad,0)),backgroundColor:'#282bcb',borderWidth:0,barPercentage:.82}]},options:chartOpts});
+ yearChart=new Chart(document.getElementById('yearChart'),{type:'bar',data:{labels:[],datasets:[{data:[],backgroundColor:'#282bcb',borderWidth:0,barPercentage:.72}]},options:chartOpts});
+ update();
+}
+function update(){
+ const selected=[...document.querySelectorAll('.yearCheck:checked')].map(c=>Number(c.value));
+ const filtered=dataset.detalle.filter(x=>selected.includes(x.Año));
+ const ages=[...new Set(dataset.detalle.map(x=>x.Edad))].sort((a,b)=>a-b);
+ ageChart.data.labels=ages;ageChart.data.datasets[0].data=ages.map(age=>filtered.filter(x=>x.Edad===age).reduce((s,x)=>s+x.Cantidad,0));ageChart.update();
+ const years=[...new Set(filtered.map(x=>x.Año))].sort((a,b)=>a-b);
+ yearChart.data.labels=years;yearChart.data.datasets[0].data=years.map(y=>filtered.filter(x=>x.Año===y).reduce((s,x)=>s+x.Cantidad,0));yearChart.update();
+ document.getElementById('dataRows').innerHTML=filtered.map(x=>`<tr title="${x.Origen||''}"><td>${x.Año}</td><td>${x.Edad}</td><td>${fmt(x.Cantidad)}${(x.Origen||'').includes('Calculado')?' *':''}</td></tr>`).join('');
+ document.getElementById('grandTotal').textContent=fmt(filtered.reduce((s,x)=>s+x.Cantidad,0));
+}
+</script>
+</body></html>

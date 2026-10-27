@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Seguridad Ciudadana | Juventudes en Cifras</title>
+<link rel="stylesheet" href="css/styles.css"><script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<style>
+.sc-page{max-width:1500px;margin:0 auto;padding:24px 20px 14px}.sc-top{display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;margin-bottom:16px}.sc-title{font-size:20px;color:#293b98;font-weight:700;text-transform:uppercase;margin:0}.sc-nav{display:flex;gap:8px;flex-wrap:wrap}.sc-nav a{background:#fff;color:#777;border-radius:9px;padding:10px 14px;font-size:10px;text-decoration:none}.sc-nav a.active,.sc-nav a:hover{background:#293b98;color:white}
+.sc-grid{display:grid;grid-template-columns:220px minmax(0,1fr);gap:14px}.sc-panel{background:#fff;border-radius:14px;padding:14px;min-width:0;box-shadow:0 1px 3px #17255408}.sc-filter h3{font-size:14px;margin:0 0 10px}.sc-check{display:flex;align-items:center;gap:8px;font-size:13px;margin:10px 2px}.sc-check input{accent-color:#222}.sc-main{display:grid;grid-template-rows:300px 270px;gap:12px;min-width:0}.sc-lower{display:grid;grid-template-columns:1fr 1fr;gap:12px;min-width:0}.sc-ctitle{text-align:center;font-size:15px;font-weight:500;margin:0 0 8px}.sc-chart{height:calc(100% - 28px);min-height:200px;position:relative}.sc-foot{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:12px}.sc-info h3{margin:0 0 8px;font-size:14px}.sc-info p{font-size:12px;line-height:1.5;text-align:justify;margin:7px 0}.sc-source{text-align:right;font-size:12px;padding:12px 4px}.sc-note{font-size:11px;color:#687579;line-height:1.4}.sc-select{padding:6px 9px;border:1px solid #d6dfe1;border-radius:6px;background:white;max-width:100%}.sc-empty{padding:20px 12px;text-align:center;color:#687579;font-size:13px;line-height:1.5}
+@media(max-width:1050px){.sc-grid{grid-template-columns:190px minmax(0,1fr)}.sc-main{grid-template-rows:300px auto}.sc-lower{grid-template-columns:1fr}.sc-foot{grid-template-columns:1fr}}
+@media(max-width:650px){.sc-page{padding:14px 10px}.sc-grid{grid-template-columns:1fr}.sc-main{grid-template-rows:300px auto}.sc-lower{grid-template-columns:1fr}.sc-title{font-size:16px}.sc-check{display:inline-flex;margin-right:10px}}
+</style></head>
+<body>
+<header class="site-header"><div class="header-inner"><div class="institutional-logos">
+<img src="assets/escudo.png" alt="Gobierno de Honduras" class="header-logo logo-honduras">
+<img src="assets/logo-injuve1.png" alt="INJUVE" class="header-logo logo-injuve">
+<img src="assets/observatorio nacional.png" alt="Observatorio Nacional de los Derechos de las Juventudes" class="header-logo logo-observatorio">
+</div></div></header>
+<main class="main-shell" style="display:block;min-height:75vh"><div class="sc-page">
+<div class="sc-top"><h1 class="sc-title">Seguridad Ciudadana</h1><nav class="sc-nav">
+<a href="index.html">INICIO</a><a class="active" href="seguridad-ciudadana.html">SEGURIDAD</a><a href="datos-demograficos.html">DEMOGRAFIA</a><a href="mercado-trabajo.html">FACTORES SOCIOECONOMICOS</a><a href="educacion.html">EDUCACIÓN</a><a href="comparacion-2024-2025.html">COMPARACION 2024-2025</a><a href="migracion.html">MIGRACION</a><a href="salud-mujeres-jovenes.html">PARTOS</a>
+</nav></div>
+<div class="sc-grid">
+<aside class="sc-panel sc-filter"><h3>Tipo de delito</h3><select id="crimeFilter" class="sc-select"><option value="Todos">Todos los delitos</option></select><h3 style="margin-top:20px">Año</h3><label class="sc-check"><input id="allYears" type="checkbox" checked> Seleccionar todo</label><div id="yearChecks"></div></aside>
+<section class="sc-main">
+<div class="sc-panel" id="yearPanel"><h2 class="sc-ctitle">Distribución por año</h2><div class="sc-chart"><canvas id="yearChart"></canvas></div></div>
+<div class="sc-lower">
+<div class="sc-panel" id="sexPanel"><h2 class="sc-ctitle">Cantidad por sexo</h2><div class="sc-chart"><canvas id="sexChart"></canvas></div></div>
+<div class="sc-panel" id="agePanel"><h2 class="sc-ctitle">Distribución por edad</h2><div class="sc-chart"><canvas id="ageChart"></canvas></div></div>
+</div></section>
+</div>
+<div class="sc-foot"><section class="sc-panel sc-info"><h3>Ficha Técnica</h3><p>El observatorio Nacional de los Derechos de las Juventudes, pone a disposicion del publico en general; informacion estadistica sobre aspectos relacionados con la Seguridad Ciudadana en lo correspondiente a juventudes en edad 12 a 30 Años.</p><p class="sc-note">Se presenta informacion de incidencia de homicidios,lesiones, muertes por accidentes de transito y suicidios, en las juventudes. Ademas,se proveen datos de denuncias de juventudes por delitos sexuales, secuestros y violencia domestica e intrafamiliar. Esta infromacion puede visualizarse por año de los hechos, sexo, edad, delito especifico,visualizando los datos registrados en el pais.</p><p class="sc-note">La informacion obtenida es recolectada por el Observatorio Nacional de la Juventud</p></section>
+<div class="sc-source"><strong>Fuente:</strong> Observatorio Nacional de los Derechos de las Juventudes</div>
+</div></main>
+<script>
+let D,yearChart,sexChart,ageChart;
+const fmt=n=>Number(n).toLocaleString('en-US');
+const colors=['#293b98','#293b98','#293b98','#293b98','#293b98','#293b98','#293b98','#293b98'];
+const opts={responsive:true,maintainAspectRatio:false,plugins:{legend:{display:false},tooltip:{callbacks:{label:c=>fmt(c.raw)+' registros'}}},scales:{x:{grid:{display:false},ticks:{color:'#666',maxRotation:45,minRotation:0}},y:{beginAtZero:true,grid:{color:'#dce2e3'},ticks:{color:'#666',callback:v=>v>=1000?(v/1000)+' mil':v}}}};
+fetch('data/seguridad_ciudadana.json').then(r=>r.json()).then(d=>{D=d;init()}).catch(()=>{document.querySelector('.sc-main').innerHTML='<div class="sc-panel">No se pudo cargar el JSON. Abre el proyecto con Live Server.</div>'});
+function init(){
+ const cats=[...new Set([...D.año.map(x=>x.delito),...D.sexo.map(x=>x.delito),...D.delitos.map(x=>x.categoria),...D.edad.map(x=>x.delito)])].sort();
+ document.getElementById('crimeFilter').innerHTML='<option value="Todos">Todos los delitos</option>'+cats.map(x=>`<option value="${x}">${x}</option>`).join('');
+ const years=[...new Set(D.año.map(x=>x.año))].sort((a,b)=>a-b);
+ document.getElementById('yearChecks').innerHTML=years.map(y=>`<label class="sc-check"><input class="yearCheck" type="checkbox" value="${y}" checked> ${y}</label>`).join('');
+ document.getElementById('allYears').onchange=e=>{document.querySelectorAll('.yearCheck').forEach(c=>c.checked=e.target.checked);update()};
+ document.querySelectorAll('.yearCheck').forEach(c=>c.onchange=()=>{document.getElementById('allYears').checked=[...document.querySelectorAll('.yearCheck')].every(c=>c.checked);update()});
+ document.getElementById('crimeFilter').onchange=update;
+ yearChart=new Chart(document.getElementById('yearChart'),{type:'bar',data:{labels:[],datasets:[{data:[],backgroundColor:'#293b98',borderRadius:3}]},options:opts});
+ sexChart=new Chart(document.getElementById('sexChart'),{type:'bar',data:{labels:['Hombres','Mujeres'],datasets:[{label:'Cantidad de registros',data:[],backgroundColor:['#929b9f','#293b98'],borderRadius:3}]},options:{...opts,plugins:{legend:{display:false},tooltip:{callbacks:{label:c=>fmt(c.raw)+' registros'}}},scales:{x:{grid:{display:false},ticks:{color:'#666'}},y:{beginAtZero:true,grid:{color:'#dce2e3'},ticks:{color:'#666',callback:v=>v>=1000?(v/1000)+' mil':v}}}}});
+ ageChart=new Chart(document.getElementById('ageChart'),{type:'bar',data:{labels:[],datasets:[{data:[],backgroundColor:'#293b98',borderRadius:2}]},options:opts});
+ update();
+}
+function setPanel(panelId,chartId,hasData,message){
+ const panel=document.getElementById(panelId);
+ panel.style.display=hasData?'':'none';
+ let old=panel.querySelector('.sc-empty'); if(old) old.remove();
+ if(!hasData){const note=document.createElement('div');note.className='sc-empty';note.textContent=message;panel.appendChild(note);}
+}
+function update(){
+ const cat=document.getElementById('crimeFilter').value;
+ const ys=[...document.querySelectorAll('.yearCheck:checked')].map(c=>Number(c.value));
+ const yr=D.año.filter(x=>(cat==='Todos'||x.delito===cat)&&ys.includes(Number(x.año)));
+ const yearTotals={};yr.forEach(x=>yearTotals[x.año]=(yearTotals[x.año]||0)+Number(x.cantidad||0));
+ const yearLabels=Object.keys(yearTotals).sort((a,b)=>a-b);
+ yearChart.data.labels=yearLabels;
+ yearChart.data.datasets[0].data=yearLabels.map(y=>yearTotals[y]);
+ yearChart.update();
+ setPanel('yearPanel','yearChart',yearLabels.length>0,'No hay registros anuales para la selección actual. Revisa el tipo de delito o marca otros años.');
+ const sx=D.sexo.filter(x=>(cat==='Todos'||x.delito===cat)&&['Hombre','Mujer'].includes(x.sexo));
+ const sexTotals={Hombre:0,Mujer:0};
+ sx.forEach(x=>sexTotals[x.sexo]+=Number(x.cantidad||0));
+ const hasSex=sx.length>0;
+ sexChart.data.labels=['Hombres','Mujeres'];
+ sexChart.data.datasets[0].data=hasSex?[sexTotals.Hombre,sexTotals.Mujer]:[];
+ sexChart.update();
+ setPanel('sexPanel','sexChart',hasSex,'El Excel no contiene datos por sexo para esta categoría.');
+ const ag=D.edad.filter(x=>(cat==='Todos'||x.delito===cat)&&Number.isFinite(Number(x.edad))&&Number.isFinite(Number(x.cantidad)));
+ const ageTotals={};ag.forEach(x=>ageTotals[x.edad]=(ageTotals[x.edad]||0)+Number(x.cantidad||0));
+ const ageLabels=Object.keys(ageTotals).sort((a,b)=>Number(a)-Number(b));
+ ageChart.data.labels=ageLabels;ageChart.data.datasets[0].data=ageLabels.map(a=>ageTotals[a]);ageChart.update();
+ setPanel('agePanel','ageChart',ageLabels.length>0,'El Excel no contiene datos por edad para esta categoría.');
+ const lower=document.querySelector('.sc-lower');
+ const visiblePanels=[...lower.children].filter(el=>el.style.display!=='none').length;
+ lower.style.gridTemplateColumns=visiblePanels===1?'1fr':'1fr 1fr';
+}
+</script></body></html>

@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Comparación 2024–2025 | Juventudes en Cifras</title>
+<link rel="stylesheet" href="css/styles.css">
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<style>
+.cmp-page{max-width:1500px;margin:0 auto;padding:22px 22px 30px}
+.cmp-top{display:flex;justify-content:flex-end;align-items:center;margin-bottom:18px}
+.cmp-nav{display:flex;gap:8px;flex-wrap:wrap}
+.cmp-nav a{padding:10px 14px;background:#fff;color:#777;border-radius:10px;text-decoration:none;font-size:12px;white-space:nowrap}
+.cmp-nav a.active,.cmp-nav a:hover{background:#293b98;color:#fff}
+.cmp-heading{color:#293b98;font-size:clamp(22px,2.2vw,30px);line-height:1.25;margin:0 0 6px}
+.cmp-subtitle{color:#68727a;font-size:14px;line-height:1.5;margin:0 0 20px}
+.cmp-kpis{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin-bottom:16px}
+.cmp-card,.cmp-panel{background:#fff;border-radius:16px;padding:18px;box-shadow:0 3px 12px rgba(35,70,80,.04);min-width:0}
+.cmp-card .eyebrow{font-size:12px;color:#737b80;text-transform:uppercase;letter-spacing:.04em}
+.cmp-card h2{font-size:16px;margin:9px 0;color:#30343b}
+.cmp-number{font-size:clamp(23px,2.4vw,32px);font-weight:750;color:#293b98;line-height:1.2}
+.cmp-direction{font-size:12px;margin-top:7px;color:#56616b}
+.cmp-grid{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(300px,.75fr);gap:16px}
+.cmp-panel h2{font-size:17px;color:#30343b;margin:0 0 14px;text-align:center}
+.cmp-chart{height:340px;position:relative}
+.cmp-interpretation{font-size:14px;line-height:1.7;color:#454b51;text-align:justify}
+.cmp-interpretation p{margin:0 0 10px}
+.cmp-note{margin-top:16px;padding:12px 14px;background:#fff8e8;border:1px solid #f1dfac;color:#705b2a;border-radius:10px;font-size:12px;line-height:1.55}
+.cmp-source{text-align:right;margin-top:16px;font-size:12px;color:#6b7378;line-height:1.5}
+.cmp-table-wrap{overflow:auto;margin-top:16px}
+.cmp-table{width:100%;border-collapse:collapse;font-size:13px}
+.cmp-table th,.cmp-table td{padding:11px 10px;text-align:left;border-bottom:1px solid #e7ebed}
+.cmp-table th{font-weight:600;color:#39434a;background:#f5f7f8}
+.cmp-table td.num{text-align:right;font-variant-numeric:tabular-nums}
+@media(max-width:900px){.cmp-kpis{grid-template-columns:1fr}.cmp-grid{grid-template-columns:1fr}.cmp-chart{height:300px}}
+@media(max-width:650px){.cmp-page{padding:14px 12px}.cmp-nav a{padding:9px 10px}.cmp-source{text-align:left}}
+</style>
+</head>
+<body>
+<header class="site-header"><div class="header-inner"><div class="institutional-logos">
+<img src="assets/escudo.png" alt="Gobierno de Honduras" class="header-logo logo-honduras">
+<img src="assets/logo-injuve1.png" alt="INJUVE" class="header-logo logo-injuve">
+<img src="assets/observatorio nacional.png" alt="Observatorio Nacional de los Derechos de las Juventudes" class="header-logo logo-observatorio">
+</div></div></header>
+<main class="main-shell" style="display:block;min-height:75vh">
+<section class="cmp-page">
+<div class="cmp-top"><nav class="cmp-nav" aria-label="Navegación">
+<a href="index.html">INICIO</a><a href="mercado-trabajo.html">FACTORES SOCIOECONOMICOS</a><a href="datos-demograficos.html">DEMOGRAFÍA</a><a href="educacion.html">EDUCACIÓN</a><a class="active" href="comparacion-2024-2025.html">COMPARACIÓN 2024–2025</a><a href="migracion.html">MIGRACION</a><a href="salud-mujeres-jovenes.html">PARTOS</a><a href="seguridad-ciudadana.html">SEGURIDAD CIUDADANA</a>
+</nav></div>
+<h1 class="cmp-heading">Comparación educativa 2024–2025</h1>
+<p class="cmp-subtitle">Variación del número de jóvenes por situación educativa y laboral, entre 2024 y 2025.</p>
+<section class="cmp-kpis" id="kpis"></section>
+<div class="cmp-grid">
+<section class="cmp-panel"><h2>Variación entre 2024 y 2025</h2><div class="cmp-chart"><canvas id="changeChart"></canvas></div></section>
+<section class="cmp-panel"><h2>Ficha Tecnica</h2><div class="cmp-interpretation" id="interpretation"></div></section>
+</div>
+<section class="cmp-panel cmp-table-wrap">
+<h2>Resumen de cambios reportados</h2>
+<table class="cmp-table"><thead><tr><th>Categoría</th><th>Variación</th><th>Resultado</th></tr></thead><tbody id="summaryTable"></tbody></table>
+</section>
+<div class="mt-foot"><span>Fuente: cálculos propios con datos de la EPHPM, 2026.</span><span></div>
+</section></main>
+<script>
+fetch("data/comparacion_2024_2025.json")
+.then(r=>{if(!r.ok)throw new Error("No se pudo cargar el archivo JSON");return r.json()})
+.then(data=>{
+ const fmt=n=>new Intl.NumberFormat("es-HN").format(Math.abs(n));
+ const sign=n=>n>0?"+":n<0?"−":"";
+ document.getElementById("kpis").innerHTML=data.changes.map(d=>`
+ <article class="cmp-card"><div class="eyebrow">Comparación 2024–2025</div><h2>${d.label}</h2>
+ <div class="cmp-number">${sign(d.change)}${fmt(d.change)}</div>
+ <div class="cmp-direction">${d.direction} de jóvenes reportados</div></article>`).join("");
+ document.getElementById("interpretation").innerHTML=data.interpretation.split(/(?<=[.!?])\\s+/).filter(Boolean).map(p=>`<p>${p}</p>`).join("");
+ document.getElementById("summaryTable").innerHTML=data.changes.map(d=>`<tr><td>${d.label}</td><td class="num">${sign(d.change)}${fmt(d.change)}</td><td>${d.direction}</td></tr>`).join("");
+ new Chart(document.getElementById("changeChart"),{
+  type:"bar",
+  data:{labels:data.changes.map(d=>d.label),datasets:[{label:"Variación de jóvenes",data:data.changes.map(d=>d.change),backgroundColor:data.changes.map(d=>d.change<0?"#929b9f":"#293b98"),borderRadius:4}]},
+  options:{indexAxis:"y",responsive:true,maintainAspectRatio:false,plugins:{legend:{display:false},tooltip:{callbacks:{label:c=>(c.raw>0?"+":"−")+fmt(c.raw)+" jóvenes"}}},
+   scales:{x:{grid:{color:"#e8edef"},ticks:{callback:v=>(v>0?"+":v<0?"−":"")+fmt(v)},title:{display:true,text:"Cambio en número de jóvenes"}},y:{grid:{display:false}}}}
+ });
+}).catch(err=>{document.getElementById("interpretation").textContent="No se pudo cargar data/comparacion_2024_2025.json. Abre el proyecto con Live Server y verifica que la carpeta data esté en el lugar correcto.";console.error(err)});
+</script>
+</body></html>
