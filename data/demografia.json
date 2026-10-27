@@ -1,0 +1,52 @@
+{
+  "historical_source": "Gráficos de Juventudes en Cifras, INE–INJUVE 2024, valores leídos de la captura y contrastados con la publicación secundaria consultada.",
+  "excel_source": "datos 2026 primer tri.xlsx, hojas Demografía y Área de población.",
+  "population": [
+    {
+      "year": 2021,
+      "total": 3354108,
+      "men": 1666396,
+      "women": 1687712,
+      "source": "INE–INJUVE 2024"
+    },
+    {
+      "year": 2022,
+      "total": 3313896,
+      "men": 1567876,
+      "women": 1746021,
+      "source": "INE–INJUVE 2024"
+    },
+    {
+      "year": 2023,
+      "total": 3190136,
+      "men": 1559922,
+      "women": 1630214,
+      "source": "INE–INJUVE 2024"
+    },
+    {
+      "year": 2024,
+      "total": 3272504,
+      "men": 1554925,
+      "women": 1717580,
+      "source": "Excel proporcionado"
+    },
+    {
+      "year": 2025,
+      "total": 3324670,
+      "men": 1587076,
+      "women": 1737593,
+      "source": "Excel proporcionado"
+    }
+  ],
+  "area_distribution": {
+    "year": 2025,
+    "urban_percent": 55.47,
+    "rural_percent": 44.53,
+    "source": "Excel proporcionado"
+  },
+  "validation_notes": [
+    "Los valores de 2021–2023 se incorporaron desde la captura de referencia y se contrastaron con una publicación secundaria; confirmar contra la fuente oficial INE–INJUVE antes de publicación definitiva.",
+    "La suma de hombres y mujeres difiere por una persona del total publicado en 2022, 2024 y 2025. Se conservan los valores tal como se muestran en las fuentes.",
+    "La distribución urbana/rural corresponde a 2025, no a todos los años. No se debe interpretar como serie histórica."
+  ]
+}

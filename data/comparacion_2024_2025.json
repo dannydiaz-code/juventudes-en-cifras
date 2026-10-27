@@ -1,0 +1,33 @@
+{
+  "title": "Comparación educativa 2024–2025",
+  "source": "Fuente: Cálculos efectuados de manera propia con datos de la EPHPM, 2026",
+  "periods": [
+    2024,
+    2025
+  ],
+  "changes": [
+    {
+      "category": "NINIS",
+      "label": "Ni estudian ni trabajan",
+      "change": -33122,
+      "direction": "disminución",
+      "unit": "jóvenes"
+    },
+    {
+      "category": "ESTUDIAN Y TRABAJAN",
+      "label": "Estudian y trabajan",
+      "change": 317696,
+      "direction": "aumento",
+      "unit": "jóvenes"
+    },
+    {
+      "category": "ESTUDIAN",
+      "label": "Únicamente estudian",
+      "change": -37416,
+      "direction": "disminución",
+      "unit": "jóvenes"
+    }
+  ],
+  "interpretation": "Es observable que los jóvenes clasificados en la categoría NI ESTUDIAN NI TRABAJAN muestran una disminución de 33,122 jóvenes al cierre de 2025, a su vez se muestra un aumento significativo de los considerados ESTUDIAN Y TRABAJAN que suma positivamente 317,696 por último se evidencia una disminución de los que ESTUDIAN los cuales suman 37,416 jóvenes, esto último puede estar influenciado por la conclusión o terminación del periodo ordinario de estudios, principalmente y en menor cuantía por efectos de rezago escolar.",
+  "methodological_note": "La hoja de Excel incluye un gráfico comparativo con barras para 2024 y 2025, pero no contiene las cifras exactas de cada barra como celdas editables. Por transparencia, este tablero grafica las variaciones absolutas expresamente descritas en la hoja; no reconstruye ni inventa los totales anuales."
+}

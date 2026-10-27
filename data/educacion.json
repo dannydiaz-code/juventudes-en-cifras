@@ -1,0 +1,31 @@
+{
+  "titulo": "Indicadores de educación y situación laboral de la población joven",
+  "periodo": "2026",
+  "fuente": "Cálculos propios con datos de la EPHPM, 2026, según el archivo datos 2026 primer tri.xlsx proporcionado.",
+  "indicadores": [
+    {
+      "id": "estudian",
+      "label": "Estudian",
+      "valor": 916639,
+      "porcentaje": 27.57
+    },
+    {
+      "id": "estudian_trabajan",
+      "label": "Estudian y trabajan",
+      "valor": 1503566,
+      "porcentaje": 45.22
+    },
+    {
+      "id": "nini",
+      "label": "Ni estudian ni trabajan (NINI)",
+      "valor": 904465,
+      "porcentaje": 27.2
+    }
+  ],
+  "total": 3324670,
+  "notas": [
+    "La hoja EDUCATIVOS – LABORALES contiene una clasificación nacional de jóvenes: estudian, estudian y trabajan, y no estudian ni trabajan.",
+    "El Excel no contiene desglose de matrícula por departamento, municipio ni sexo; por eso esos filtros no se simulan en este dashboard.",
+    "Los porcentajes están redondeados según el documento original."
+  ]
+}

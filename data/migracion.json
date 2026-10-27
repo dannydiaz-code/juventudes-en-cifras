@@ -1,0 +1,652 @@
+{
+  "years": [
+    "2022",
+    "2023",
+    "2024"
+  ],
+  "categories": [
+    "Migración regular",
+    "Migración irregular / jóvenes en tránsito",
+    "Jóvenes retornados"
+  ],
+  "data": {
+    "2022": {
+      "Migración regular": [
+        {
+          "departamento": "Cortés",
+          "cantidad": 159524
+        },
+        {
+          "departamento": "Francisco Morazán",
+          "cantidad": 112202
+        },
+        {
+          "departamento": "Ocotepeque",
+          "cantidad": 28488
+        },
+        {
+          "departamento": "Choluteca",
+          "cantidad": 23729
+        },
+        {
+          "departamento": "Copán",
+          "cantidad": 21527
+        },
+        {
+          "departamento": "Valle",
+          "cantidad": 18772
+        },
+        {
+          "departamento": "Atlántida",
+          "cantidad": 16647
+        },
+        {
+          "departamento": "No aplica",
+          "cantidad": 15204
+        },
+        {
+          "departamento": "Comayagua",
+          "cantidad": 15004
+        },
+        {
+          "departamento": "Yoro",
+          "cantidad": 14202
+        },
+        {
+          "departamento": "El Paraíso",
+          "cantidad": 12238
+        },
+        {
+          "departamento": "Olancho",
+          "cantidad": 9341
+        },
+        {
+          "departamento": "Santa Bárbara",
+          "cantidad": 8085
+        },
+        {
+          "departamento": "La Paz",
+          "cantidad": 6125
+        },
+        {
+          "departamento": "Colón",
+          "cantidad": 5804
+        },
+        {
+          "departamento": "Lempira",
+          "cantidad": 5243
+        },
+        {
+          "departamento": "Islas de la Bahía",
+          "cantidad": 4535
+        },
+        {
+          "departamento": "Intibucá",
+          "cantidad": 4351
+        },
+        {
+          "departamento": "N/D",
+          "cantidad": 734
+        },
+        {
+          "departamento": "Gracias a Dios",
+          "cantidad": 431
+        },
+        {
+          "departamento": "En tránsito",
+          "cantidad": 114
+        },
+        {
+          "departamento": "Otro",
+          "cantidad": 1
+        }
+      ],
+      "Migración irregular / jóvenes en tránsito": [
+        {
+          "departamento": "El Paraíso",
+          "cantidad": 64182
+        },
+        {
+          "departamento": "No aplica",
+          "cantidad": 19902
+        },
+        {
+          "departamento": "Francisco Morazán",
+          "cantidad": 1318
+        },
+        {
+          "departamento": "Sin dato en Excel",
+          "cantidad": 174
+        },
+        {
+          "departamento": "Otro",
+          "cantidad": 12
+        },
+        {
+          "departamento": "Cortés",
+          "cantidad": 4
+        },
+        {
+          "departamento": "Choluteca",
+          "cantidad": 2
+        },
+        {
+          "departamento": "En tránsito",
+          "cantidad": 2
+        },
+        {
+          "departamento": "Copán",
+          "cantidad": 1
+        }
+      ],
+      "Jóvenes retornados": [
+        {
+          "departamento": "Cortés",
+          "cantidad": 9155
+        },
+        {
+          "departamento": "Francisco Morazán",
+          "cantidad": 7164
+        },
+        {
+          "departamento": "Yoro",
+          "cantidad": 4578
+        },
+        {
+          "departamento": "Comayagua",
+          "cantidad": 4506
+        },
+        {
+          "departamento": "Olancho",
+          "cantidad": 3526
+        },
+        {
+          "departamento": "Copán",
+          "cantidad": 3131
+        },
+        {
+          "departamento": "Atlántida",
+          "cantidad": 2944
+        },
+        {
+          "departamento": "Santa Bárbara",
+          "cantidad": 2775
+        },
+        {
+          "departamento": "El Paraíso",
+          "cantidad": 2639
+        },
+        {
+          "departamento": "Lempira",
+          "cantidad": 2546
+        },
+        {
+          "departamento": "Colón",
+          "cantidad": 2494
+        },
+        {
+          "departamento": "Choluteca",
+          "cantidad": 3376
+        },
+        {
+          "departamento": "Intibucá",
+          "cantidad": 1951
+        },
+        {
+          "departamento": "Ocotepeque",
+          "cantidad": 1218
+        },
+        {
+          "departamento": "Valle",
+          "cantidad": 1020
+        },
+        {
+          "departamento": "La Paz",
+          "cantidad": 1014
+        },
+        {
+          "departamento": "Islas de la Bahía",
+          "cantidad": 234
+        },
+        {
+          "departamento": "Gracias a Dios",
+          "cantidad": 80
+        },
+        {
+          "departamento": "No aplica",
+          "cantidad": 52
+        },
+        {
+          "departamento": "Sin dato en Excel",
+          "cantidad": 26
+        }
+      ]
+    },
+    "2023": {
+      "Migración regular": [
+        {
+          "departamento": "Cortés",
+          "cantidad": 169253
+        },
+        {
+          "departamento": "Francisco Morazán",
+          "cantidad": 137401
+        },
+        {
+          "departamento": "Copán",
+          "cantidad": 34749
+        },
+        {
+          "departamento": "Choluteca",
+          "cantidad": 33925
+        },
+        {
+          "departamento": "Ocotepeque",
+          "cantidad": 30427
+        },
+        {
+          "departamento": "Comayagua",
+          "cantidad": 21624
+        },
+        {
+          "departamento": "Valle",
+          "cantidad": 20528
+        },
+        {
+          "departamento": "Atlántida",
+          "cantidad": 18696
+        },
+        {
+          "departamento": "El Paraíso",
+          "cantidad": 17223
+        },
+        {
+          "departamento": "Yoro",
+          "cantidad": 16688
+        },
+        {
+          "departamento": "No aplica",
+          "cantidad": 14876
+        },
+        {
+          "departamento": "Olancho",
+          "cantidad": 12656
+        },
+        {
+          "departamento": "Santa Bárbara",
+          "cantidad": 10011
+        },
+        {
+          "departamento": "Colón",
+          "cantidad": 7644
+        },
+        {
+          "departamento": "Lempira",
+          "cantidad": 7016
+        },
+        {
+          "departamento": "Intibucá",
+          "cantidad": 5006
+        },
+        {
+          "departamento": "La Paz",
+          "cantidad": 4671
+        },
+        {
+          "departamento": "Islas de la Bahía",
+          "cantidad": 4550
+        },
+        {
+          "departamento": "Gracias a Dios",
+          "cantidad": 477
+        },
+        {
+          "departamento": "N/D",
+          "cantidad": 393
+        },
+        {
+          "departamento": "Sin dato en Excel",
+          "cantidad": 167
+        },
+        {
+          "departamento": "En tránsito",
+          "cantidad": 87
+        }
+      ],
+      "Migración irregular / jóvenes en tránsito": [
+        {
+          "departamento": "El Paraíso",
+          "cantidad": 243638
+        },
+        {
+          "departamento": "No aplica",
+          "cantidad": 27293
+        },
+        {
+          "departamento": "Francisco Morazán",
+          "cantidad": 91
+        },
+        {
+          "departamento": "Sin dato en Excel",
+          "cantidad": 19
+        },
+        {
+          "departamento": "Copán",
+          "cantidad": 8
+        },
+        {
+          "departamento": "Colón",
+          "cantidad": 3
+        },
+        {
+          "departamento": "Intibucá",
+          "cantidad": 2
+        },
+        {
+          "departamento": "Choluteca",
+          "cantidad": 1
+        }
+      ],
+      "Jóvenes retornados": [
+        {
+          "departamento": "Cortés",
+          "cantidad": 5051
+        },
+        {
+          "departamento": "Francisco Morazán",
+          "cantidad": 3433
+        },
+        {
+          "departamento": "Yoro",
+          "cantidad": 2467
+        },
+        {
+          "departamento": "Comayagua",
+          "cantidad": 2309
+        },
+        {
+          "departamento": "Olancho",
+          "cantidad": 1949
+        },
+        {
+          "departamento": "Copán",
+          "cantidad": 1759
+        },
+        {
+          "departamento": "Santa Bárbara",
+          "cantidad": 1621
+        },
+        {
+          "departamento": "Atlántida",
+          "cantidad": 1533
+        },
+        {
+          "departamento": "Colón",
+          "cantidad": 1431
+        },
+        {
+          "departamento": "Lempira",
+          "cantidad": 1386
+        },
+        {
+          "departamento": "Choluteca",
+          "cantidad": 1312
+        },
+        {
+          "departamento": "El Paraíso",
+          "cantidad": 1308
+        },
+        {
+          "departamento": "Intibucá",
+          "cantidad": 1030
+        },
+        {
+          "departamento": "Ocotepeque",
+          "cantidad": 621
+        },
+        {
+          "departamento": "Valle",
+          "cantidad": 530
+        },
+        {
+          "departamento": "La Paz",
+          "cantidad": 498
+        },
+        {
+          "departamento": "Islas de la Bahía",
+          "cantidad": 128
+        },
+        {
+          "departamento": "Gracias a Dios",
+          "cantidad": 52
+        },
+        {
+          "departamento": "Sin dato en Excel",
+          "cantidad": 27
+        },
+        {
+          "departamento": "No aplica",
+          "cantidad": 11
+        }
+      ]
+    },
+    "2024": {
+      "Migración regular": [
+        {
+          "departamento": "Francisco Morazán",
+          "cantidad": 38297
+        },
+        {
+          "departamento": "Cortés",
+          "cantidad": 37812
+        },
+        {
+          "departamento": "Copán",
+          "cantidad": 11951
+        },
+        {
+          "departamento": "Choluteca",
+          "cantidad": 10446
+        },
+        {
+          "departamento": "Ocotepeque",
+          "cantidad": 8801
+        },
+        {
+          "departamento": "Comayagua",
+          "cantidad": 6207
+        },
+        {
+          "departamento": "El Paraíso",
+          "cantidad": 5721
+        },
+        {
+          "departamento": "Valle",
+          "cantidad": 5689
+        },
+        {
+          "departamento": "Yoro",
+          "cantidad": 4176
+        },
+        {
+          "departamento": "Atlántida",
+          "cantidad": 3667
+        },
+        {
+          "departamento": "Olancho",
+          "cantidad": 3568
+        },
+        {
+          "departamento": "No aplica",
+          "cantidad": 3464
+        },
+        {
+          "departamento": "Santa Bárbara",
+          "cantidad": 2886
+        },
+        {
+          "departamento": "Lempira",
+          "cantidad": 2273
+        },
+        {
+          "departamento": "Colón",
+          "cantidad": 1729
+        },
+        {
+          "departamento": "Intibucá",
+          "cantidad": 1557
+        },
+        {
+          "departamento": "La Paz",
+          "cantidad": 1324
+        },
+        {
+          "departamento": "Islas de la Bahía",
+          "cantidad": 927
+        },
+        {
+          "departamento": "Sin dato en Excel",
+          "cantidad": 128
+        },
+        {
+          "departamento": "Gracias a Dios",
+          "cantidad": 93
+        },
+        {
+          "departamento": "En tránsito",
+          "cantidad": 26
+        }
+      ],
+      "Migración irregular / jóvenes en tránsito": [
+        {
+          "departamento": "El Paraíso",
+          "cantidad": 68685
+        },
+        {
+          "departamento": "No aplica",
+          "cantidad": 2083
+        },
+        {
+          "departamento": "Sin dato en Excel",
+          "cantidad": 14
+        },
+        {
+          "departamento": "Cortés",
+          "cantidad": 10
+        },
+        {
+          "departamento": "Francisco Morazán",
+          "cantidad": 9
+        },
+        {
+          "departamento": "Ocotepeque",
+          "cantidad": 7
+        },
+        {
+          "departamento": "Otro",
+          "cantidad": 5
+        },
+        {
+          "departamento": "Intibucá",
+          "cantidad": 2
+        },
+        {
+          "departamento": "Olancho",
+          "cantidad": 2
+        },
+        {
+          "departamento": "Copán",
+          "cantidad": 1
+        }
+      ],
+      "Jóvenes retornados": [
+        {
+          "departamento": "Cortés",
+          "cantidad": 1138
+        },
+        {
+          "departamento": "Francisco Morazán",
+          "cantidad": 748
+        },
+        {
+          "departamento": "Yoro",
+          "cantidad": 525
+        },
+        {
+          "departamento": "Comayagua",
+          "cantidad": 433
+        },
+        {
+          "departamento": "Olancho",
+          "cantidad": 429
+        },
+        {
+          "departamento": "El Paraíso",
+          "cantidad": 332
+        },
+        {
+          "departamento": "Atlántida",
+          "cantidad": 318
+        },
+        {
+          "departamento": "Santa Bárbara",
+          "cantidad": 314
+        },
+        {
+          "departamento": "Copán",
+          "cantidad": 293
+        },
+        {
+          "departamento": "Choluteca",
+          "cantidad": 290
+        },
+        {
+          "departamento": "Colón",
+          "cantidad": 265
+        },
+        {
+          "departamento": "Intibucá",
+          "cantidad": 167
+        },
+        {
+          "departamento": "Lempira",
+          "cantidad": 150
+        },
+        {
+          "departamento": "La Paz",
+          "cantidad": 125
+        },
+        {
+          "departamento": "Valle",
+          "cantidad": 121
+        },
+        {
+          "departamento": "Ocotepeque",
+          "cantidad": 108
+        },
+        {
+          "departamento": "Islas de la Bahía",
+          "cantidad": 38
+        },
+        {
+          "departamento": "Gracias a Dios",
+          "cantidad": 21
+        },
+        {
+          "departamento": "Sin dato en Excel",
+          "cantidad": 2
+        },
+        {
+          "departamento": "No aplica",
+          "cantidad": 2
+        }
+      ]
+    }
+  },
+  "source": "Instituto Nacional de Migración (INM)",
+  "notes": [
+    "El archivo contiene distribución por departamento para los años 2022, 2023 y 2024.",
+    "No contiene desagregación por sexo, edad ni municipio; esos filtros no se incluyen.",
+    "Los valores con punto y tres cifras decimales se interpretaron como separador de miles, según el formato de las cifras del Excel."
+  ]
+}

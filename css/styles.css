@@ -1,0 +1,198 @@
+/* Juventudes en Cifras - estilos de la página principal */
+:root {
+  --cyan: #293b98;
+  --cyan-dark: #293b98;
+  --red: #e51d3d;
+  --text: #858585;
+  --page: #f4f8f8;
+  --white: #fff;
+  --shadow: 0 8px 24px rgba(27, 79, 93, .08);
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  color: var(--text);
+  background: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.site-header { background: #fff; }
+.header-inner {
+  max-width: 1440px;
+  min-height: 100px;
+  padding: 14px 5.5%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 28px;
+}
+.institutional-logos, .supporting-logos, .footer-support-logos {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.header-logo { display: block; object-fit: contain; }
+.logo-honduras { width: 72px; height: 66px; }
+.logo-injuve { width: 120px; height: 62px; }
+.logo-observatorio { width: 170px; height: 62px; }
+.supporting-logos { gap: 18px; }
+.support-label { font-size: 13px; white-space: nowrap; }
+.support-logo { width: 66px; height: 52px; object-fit: contain; }
+.main-shell {
+  max-width: 1496px;
+  min-height: calc(100vh - 100px);
+  margin: 0 auto;
+  padding: 50px clamp(24px, 7.3vw, 120px) 16px;
+  background: var(--page);
+  display: grid;
+  grid-template-columns: minmax(340px, 1.08fr) minmax(560px, 1.65fr);
+  grid-template-rows: auto 1fr auto auto;
+  column-gap: 38px;
+  row-gap: 22px;
+}
+.intro-card {
+  background: var(--white);
+  border-radius: 18px;
+  padding: 28px 26px;
+  min-height: 345px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: center;
+}
+.intro-card h1 {
+  color: #293b98;
+  font-size: clamp(22px, 1.8vw, 30px);
+  line-height: 1.15;
+  margin: 0 0 20px;
+  font-weight: 750;
+}
+.intro-card p {
+  margin: 0;
+  font-size: clamp(16px, 1.3vw, 21px);
+  line-height: 1.43;
+  letter-spacing: .1px;
+}
+.category-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 30px;
+  align-content: start;
+}
+.category-card {
+  min-height: 145px;
+  padding: 12px 10px 14px;
+  border-radius: 38px;
+  background: var(--white);
+  color: var(--cyan);
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 6px;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.08;
+  box-shadow: 0 0 0 1px rgba(50,180,213,0);
+  transition: transform .2s ease, box-shadow .2s ease, background-color .2s ease;
+}
+.category-card:hover, .category-card:focus-visible {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow), 0 0 0 2px rgba(50,180,213,.3);
+  color: var(--cyan-dark);
+  outline: none;
+}
+.category-card:active { transform: translateY(-1px) scale(.99); }
+.category-icon {
+  width: 72px;
+  height: 72px;
+  object-fit: contain;
+  display: block;
+}
+
+.category-card[href="migracion.html"] .category-icon,
+.category-card[href="seguridad-ciudadana.html"] .category-icon,
+.category-card[href="educacion.html"] .category-icon {
+  width: 200px;
+  height: 100px;
+  object-fit: contain;
+}
+
+.category-card-last { grid-column: 3; grid-row: 3; }
+.partner-logos {
+  grid-column: 1 / -1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: clamp(18px, 4vw, 60px);
+  padding: 0 12px;
+}
+.partner-logos img { width: 112px; height: 48px; object-fit: contain; }
+.support-footer { grid-column: 1 / -1; text-align: center; }
+.footer-support-logos { justify-content: center; gap: 22px; margin-bottom: 18px; }
+.footer-support-logos span { font-size: 12px; }
+.footer-support-logos img { width: 62px; height: 45px; object-fit: contain; }
+.support-footer p {
+  max-width: 1120px;
+  margin: 0 auto;
+  color: #3f3f3f;
+  font-size: 14px;
+  line-height: 1.45;
+}
+@media (max-width: 1050px) {
+  .header-inner { flex-wrap: wrap; justify-content: center; }
+  .main-shell {
+    grid-template-columns: 1fr;
+    padding: 30px clamp(18px, 4vw, 42px);
+  }
+  .intro-card { min-height: auto; }
+  .category-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  .category-card-last { grid-column: auto; grid-row: auto; }
+  .partner-logos, .support-footer { grid-column: 1; }
+}
+@media (max-width: 620px) {
+  .header-inner { padding: 16px; gap: 14px; }
+  .institutional-logos { justify-content: center; gap: 10px; flex-wrap: wrap; }
+  .logo-honduras { width: 54px; }
+  .logo-injuve { width: 94px; }
+  .logo-observatorio { width: 132px; }
+  .supporting-logos { justify-content: center; flex-wrap: wrap; }
+  .main-shell { padding: 20px 14px; row-gap: 18px; }
+  .intro-card { padding: 24px 18px; border-radius: 14px; }
+  .intro-card p { font-size: 16px; }
+  .category-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; }
+  .category-card { min-height: 132px; border-radius: 25px; font-size: 14px; }
+  .category-icon { width: 64px; height: 64px; }
+  .category-card[href="migracion.html"] .category-icon,
+  .category-card[href="seguridad-ciudadana.html"] .category-icon,
+  .category-card[href="educacion.html"] .category-icon {
+    width: 84px;
+    height: 72px;
+}
+  .partner-logos { gap: 16px; }
+  .partner-logos img { width: 82px; }
+  .footer-support-logos { gap: 12px; flex-wrap: wrap; }
+  .support-footer p { font-size: 12px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { scroll-behavior: auto !important; transition: none !important; }
+}
+
+.health-tech-icon {
+    width: 70px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.health-tech-icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
